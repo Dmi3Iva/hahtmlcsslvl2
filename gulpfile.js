@@ -130,7 +130,7 @@ gulp.task('clean', function () {
 // Запуск сервера
 gulp.task('server', function () {
   browserSync.init({
-    server: 'source/',
+    server: 'docs/',
     ui: false,
     cors: true
   });
