@@ -1,5 +1,6 @@
 "use strict";
 
+
 const gulp         = require('gulp');
 const del          = require('del');
 const browserSync  = require('browser-sync').create();
@@ -17,8 +18,6 @@ const sass         = require('gulp-sass');
 const csso         = require('gulp-csso');
 const rename       = require('gulp-rename');
 const sourcemaps   = require('gulp-sourcemaps');
-
-const posthtml     = require('posthtml')
 
 // Пути
 const paths = {
@@ -47,10 +46,6 @@ const paths = {
 
 // Html
 gulp.task('html', function () {
-  var plugins = [
-    require('posthtml-doctype')({doctype: 'HTML 5'}),
-    require('posthtml-include')({ encoding: 'utf-8' }) // typo require
-  ];
 
   return gulp.src(paths.html.src)
     .pipe(plumber({
@@ -61,7 +56,7 @@ gulp.task('html', function () {
         };
       })
     }))
-    .pipe(posthtml(plugins, { closingSingleTag: 'slash' }))
+    .pipe(posthtml(plugins))
     .pipe(gulp.dest(paths.root))
     .pipe(browserSync.stream());
 });
