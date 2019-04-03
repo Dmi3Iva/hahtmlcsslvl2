@@ -17,3 +17,18 @@
 @import 'show-more.scss';
 @import 'site-list.scss';
 @import 'title.scss';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+}
