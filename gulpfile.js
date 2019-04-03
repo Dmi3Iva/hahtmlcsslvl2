@@ -56,7 +56,6 @@ gulp.task('html', function () {
         };
       })
     }))
-    .pipe(posthtml(plugins))
     .pipe(gulp.dest(paths.root))
     .pipe(browserSync.stream());
 });
