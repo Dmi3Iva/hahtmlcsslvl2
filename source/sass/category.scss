@@ -1,3 +1,17 @@
 .category {
   background-color: $main-color;
 }
+
+.category__icon-slim{
+  width: 35px;
+  height: 39px;
+  
+  &:before{
+    background-color: green;
+  }
+}
+
+.category__icon-pro{
+  width: 67px;
+  height: 28px;
+}

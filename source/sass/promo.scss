@@ -1,4 +1,43 @@
 .promo__background{
   background-color: #63a73a;
   background-image: url('../img/index-background-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 10px;
+  min-height: 306px;
+}
+
+.promo{
+  font-family: $oswd-r;
+  font-size: 14px;
+  color:#fff;
+  position: relative;
+  text-align: center;
+}
+
+.promo__title{
+  font-size: 36px;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+
+.promo__image{
+  position: absolute;
+  top: 167px;
+  left: 50%;
+  margin-left:-140px;
+}
+
+.promo__button{
+  display: inline-block;
+  margin-top: 120px;
 }
