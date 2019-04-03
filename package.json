@@ -26,7 +26,7 @@
     "pug": "^2.0.3",
     "stylelint": "9.3.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "uncss": "^0.16.2",
+    "uncss": "^0.16.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
