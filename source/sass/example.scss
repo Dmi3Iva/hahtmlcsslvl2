@@ -1,3 +1,50 @@
 .example{
   background-color: #f2f2f2;
+  padding-top:43px;
+  font-family: Arial;
+}
+
+.example__heading{
+  font-size: 36px;
+  font-family: $oswd-r;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 28px;
+
+}
+
+.example__text{
+  font-size: 14px;
+  line-height: (21/16);
+}
+
+.example__results{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.example__result{
+  width: 50%;
+
+}
+
+.example__result-descr{
+  display: block;
+  font-family: $oswd-r;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 10px 0px 20px;
+  width: 80%;
+  margin: 0 auto;
+  border:1px solid #cdcdcd;
+}
+
+.example__result-name{
+  font-family: Arial;
+  font-size: 12px;
+  text-transform: lowercase;
 }
