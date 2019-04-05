@@ -41,7 +41,7 @@
             <span class="category__heading">Похудение</span>
           </h3>
           <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="" class="category__link">Каталог Slim</a>
+          <a href="catalog.html" class="category__link">Каталог Slim</a>
         </div>
         <div class="category category--pro">
           <h3 class="category__header">
@@ -50,7 +50,7 @@
           </h3>
           <p class="category__text">Заработать авторитет среди дворовых котов и даже собак?
 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a href="" class="category__link">Каталог Pro</a>
+          <a href="catalog.html" class="category__link">Каталог Pro</a>
         </div>
       </div>
     </section>
@@ -80,7 +80,7 @@
     <section class="example">
       <div class="wrapper">
         <h3 class="example__heading">Живой пример</h3>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br> Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
         <ul class="example__results">
           <li class="example__result">
             <span class="example__result-descr">5 кг</span>
@@ -91,21 +91,35 @@
             <span class="example__result-name">затрачено времени</span>
           </li>
         </ul>
-        <div class="example__presentation presentation">
-          <span class="presentation__heading">Затраты на питание: 15 000 руб.</span>
-          <div class="presentation__image-wrapper"><img src="" alt="Толстый кот" class="presentation__image"></div>
-          <div class="presentation__tooggle">
-            <span class="presentation__before">Было</span>
-            <button class="presentation__button-togle" type="button"></button>
-            <span class="presentation__after">Стало</span>
+        <section class="example__presentation presentation">
+          <h4 class="presentation__heading">Затраты на питание: 15 000 руб.</h4>
+          <div class="presentation__slider-cat slider-cat">
+            <ul class="slider-cat__list">
+              <li class="slider-cat__item slider-cat__item--show ">
+                <img src="img/before-mobile@1x.png" alt="Толстый кот" class="slider-cat__image">
+              </li>
+              <li class="slider-cat__item">
+                <img src="img/after-mobile@1x.png" alt="Худой и красивый кот" class="slider-cat__image">
+              </li>
+            </ul>
+            <div class="presentation__tooggle">
+              <label class="presentation__label" >
+                <input class="vissualy-hidden presentation__checkbox-input" type="checkbox" name="cat-before-after-checkbox" value="" id="toggle-before-after">
+                <span class="presentation__before">Было</span>
+                <span class="presentation__checkbox"></span>
+                <span class="presentation__after">Стало</span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <p class="footer__offer">приглашаем к сотрудничеству дилеров!</p>
-    <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="wrapper footer__top">
+      <p class="footer__offer">приглашаем<br>к сотрудничеству дилеров!</p>
+      <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
     <div class="footer__map"></div>
     <h3 class="footer__heading"><span class="footer__heading-accent">Cat</span> energy</h3>
     <ul class="footer__social">

@@ -1,0 +1,60 @@
+.presentation{
+  margin-top: 35px;
+  text-transform: uppercase;
+  font-family: $oswd-r;
+  font-weight: normal;
+}
+
+.presentation__heading{
+  font-weight: inherit;
+  text-align: center;
+  font-size: 14px;
+  line-height: (20/14);
+  text-transform: uppercase;
+}
+
+.presentation__tooggle{
+  font-size: 16px;
+  margin-top: 23px;
+  text-align: center;
+}
+
+.presentation__label{
+  margin-left: 8px;
+}
+
+.presentation__checkbox{
+  display: inline-block;
+  position: relative;
+
+  width: 84px;
+  height: 14px;
+
+  margin: 0 12px 0 16px;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+
+
+
+  &::after, &:after{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $green;
+
+    top: 4px;
+    left: 3px;
+    transition: .3s;
+  }
+}
+
+
+.presentation__checkbox-input:checked ~ .presentation__checkbox{
+  &::after, &:after{
+    top: 4px;
+    left: 43px;
+  }
+}

@@ -18,6 +18,7 @@
 @import 'site-list.scss';
 @import 'wrapper.scss';
 @import 'title.scss';
+@import 'slider-cat';
 
 html {
   box-sizing: border-box;
@@ -32,4 +33,12 @@ a {
 
 body{
   margin: 0;
+}
+
+.vissualy-hidden{
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0; 
 }
