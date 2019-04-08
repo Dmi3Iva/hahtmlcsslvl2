@@ -25,50 +25,58 @@
     </nav>
   </header>
   <main class="page">
-    <h1 class="page__heading">Подбор программы</h1>
-    <form action="" class="page__form form">
-      <section class="form__wrapper">
-        <h2 class="form__heading">Заполните анкету и мы подберём программу питания для вашего кота</h2>
-        <section class="form__cat">
-          <label>Имя:*
-            <input type="text" name="name">
-          </label>
-          <label>Вес(кг):*
-            <input type="text" name="weight">
-          </label>
-          <label>Вораст (Лет):
-            <input type="text" name="age">
-          </label>
-          <fieldset class="form__diet">
-            <label>Похудение
-              <input type="radio" name="lose">
+    <div class="wrapper">
+      <h1 class="page__heading">Подбор программы</h1>
+      <form action="/" class="page__form form">
+        <section class="form__wrapper">
+          <h2 class="form__heading">Заполните анкету и мы подберём<br>программу питания для вашего кота</h2>
+          <section class="form__cat">
+            <label class="form__label"><span class="form__label-text">Имя:*</span>
+              <input class="form__input-text" type="text" name="name" placeholder="Барсик">
             </label>
-            <label>Набор Массы
-              <input type="radio" name="get">
+            <label class="form__label"><span class="form__label-text" >Вес (кг):*</span>
+              <input class="form__input-text" type="text" name="weight" placeholder="7">
             </label>
-            <label>Не знаю (нужен ваш совет)
-              <input type="radio" name="idk">
+            <label class="form__label"><span class="form__label-text">Возраст (лет):</span>
+              <input class="form__input-text" type="text" name="age" placeholder="7">
             </label>
+            <fieldset class="form__diet">
+              <label class="form__label" >
+                <span class="form__diet-checkbox"></span>
+                <input type="radio" name="diet__lose-weight">
+                <span class="form__label-text">Похудение</span>
+              </label>
+              <label class="form__label">
+                <span class="form__diet-checkbox"></span>
+                <input type="radio" name="diet__get-weight">
+                <span class="form__label-text">Набор Массы</span>
+              </label>
+              <label class="form__label">
+                <span class="form__diet-checkbox"></span>
+                <input type="radio" name="diet__idk">
+                <span class="form__label-text">Не знаю (нужен ваш совет)</span>
+              </label>
+            </fieldset>
+          </section>
+          <section class="form__contacts">
+            <h2>Контактные данные (владельца кота)</h2>
+            <label for="">e-mail:*<input type="text" name="email"></label>
+            <label for="">телефон<input type="text" name="tel"></label>
+          </section>
+          <section class="form__comment">
+            <textarea class="form__comment-textarea" name="comment" rows="8" cols="80">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
+          </section>
+          <fieldset class="form__additional">
+            <label >Сахарозаменитель<input type="checkbox"></label>
+            <label >Питьевая вода<input type="checkbox"></label>
+            <label >Молоко<input type="checkbox"></label>
+            <label >Витамины<input type="checkbox"></label>
           </fieldset>
+          <button class="form__button button" type="submit" name="button"></button>
+          <p class="form__hint">*--Обязательные поля</p>
         </section>
-        <section class="form__contacts">
-          <h2>Контактные данные (владельца кота)</h2>
-          <label for="">e-mail:*<input type="text" name="email"></label>
-          <label for="">телефон<input type="text" name="tel"></label>
-        </section>
-        <section class="form__comment">
-          <textarea name="comment" rows="8" cols="80">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
-        </section>
-        <fieldset class="form__additional">
-          <label >Сахарозаменитель<input type="checkbox"></label>
-          <label >Питьевая вода<input type="checkbox"></label>
-          <label >Молоко<input type="checkbox"></label>
-          <label >Витамины<input type="checkbox"></label>
-        </fieldset>
-        <button class="form__button button" type="submit" name="button"></button>
-        <p class="form__hint">*--Обязательные поля</p>
-      </section>
-    </form>
+      </form>
+    </div>
   </main>
   <footer class="footer">
     <div class="wrapper footer__top">
