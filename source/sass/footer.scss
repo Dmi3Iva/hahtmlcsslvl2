@@ -12,11 +12,25 @@
   flex-basis: 50%;
 }
 
+.footer__address,.footer__offer{
+  width: 50%;
+}
+
 .footer__offer{
   text-transform: uppercase;
 }
 
 .footer__address{
+  font-family: Arial;
+  font-size: 14px;
   text-transform: none;
   color: #444;
+  padding-left:3px;
+  padding-top: 3px;
+  line-height: (20/14);
+}
+
+.footer__logo-text{
+  width: 129px;
+  height: 24px;
 }

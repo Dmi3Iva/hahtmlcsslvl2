@@ -19,6 +19,7 @@
 @import 'wrapper.scss';
 @import 'title.scss';
 @import 'slider-cat';
+@import 'logo';
 
 html {
   box-sizing: border-box;
@@ -40,5 +41,5 @@ body{
   overflow: hidden;
   clip: rect(0 0 0 0);
   height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0; 
+  margin: -1px; padding: 0; border: 0;
 }
