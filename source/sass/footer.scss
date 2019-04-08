@@ -33,4 +33,28 @@
 .footer__logo-text{
   width: 129px;
   height: 24px;
+  margin: 46px auto 31px;
+  display: block;
+}
+
+.footer__social{
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #d9d9d9;
+  border-width: 1px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 81px 18px 75px;
+  margin-bottom: 25px;
+}
+
+.footer__copyright{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright-text{
+  color: #444444;
+  font-size: 16px;
+  font-family: Arial;
 }
