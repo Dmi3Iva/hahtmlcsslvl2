@@ -27,56 +27,72 @@
   <main class="page">
     <div class="wrapper">
       <h1 class="page__heading">Подбор программы</h1>
+    </div>
       <form action="/" class="page__form form">
         <section class="form__wrapper">
-          <h2 class="form__heading">Заполните анкету и мы подберём<br>программу питания для вашего кота</h2>
+          <div class="wrapper">
+            <h2 class="form__heading">Заполните анкету и мы подберём<br>программу питания для вашего кота</h2>
+          </div>
           <section class="form__cat">
-            <label class="form__label"><span class="form__label-text">Имя:*</span>
-              <input class="form__input-text" type="text" name="name" placeholder="Барсик">
-            </label>
-            <label class="form__label"><span class="form__label-text" >Вес (кг):*</span>
-              <input class="form__input-text" type="text" name="weight" placeholder="7">
-            </label>
-            <label class="form__label"><span class="form__label-text">Возраст (лет):</span>
-              <input class="form__input-text" type="text" name="age" placeholder="7">
-            </label>
+            <div class="wrapper">
+              <label class="form__label">
+                <span class="form__label-text">Имя:*</span>
+                <input class="form__input-text" type="text" name="name" placeholder="Барсик">
+              </label>
+              <label class="form__label">
+                <span class="form__label-text" >Вес (кг):*</span>
+                <input class="form__input-text" type="text" name="weight" placeholder="7">
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Возраст (лет):</span>
+                <input class="form__input-text" type="text" name="age" placeholder="7">
+              </label>
+            </div>
             <fieldset class="form__diet">
               <label class="form__label" >
+                <input class="visually-hidden form__diet-checkbox-input" type="radio" name="diet" alt="Выбрать похудение" checked="checked"></input>
                 <span class="form__diet-checkbox"></span>
-                <input type="radio" name="diet__lose-weight">
                 <span class="form__label-text">Похудение</span>
               </label>
               <label class="form__label">
+                <input class="visually-hidden form__diet-checkbox-input" type="radio" name="diet" alt="Выбрать набор массы"></input>
                 <span class="form__diet-checkbox"></span>
-                <input type="radio" name="diet__get-weight">
                 <span class="form__label-text">Набор Массы</span>
               </label>
               <label class="form__label">
+                <input class="visually-hidden form__diet-checkbox-input" type="radio" name="diet" alt="Выбрать совет"></input>
                 <span class="form__diet-checkbox"></span>
-                <input type="radio" name="diet__idk">
                 <span class="form__label-text">Не знаю (нужен ваш совет)</span>
               </label>
             </fieldset>
           </section>
-          <section class="form__contacts">
-            <h2>Контактные данные (владельца кота)</h2>
-            <label for="">e-mail:*<input type="text" name="email"></label>
-            <label for="">телефон<input type="text" name="tel"></label>
-          </section>
-          <section class="form__comment">
-            <textarea class="form__comment-textarea" name="comment" rows="8" cols="80">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
-          </section>
-          <fieldset class="form__additional">
-            <label >Сахарозаменитель<input type="checkbox"></label>
-            <label >Питьевая вода<input type="checkbox"></label>
-            <label >Молоко<input type="checkbox"></label>
-            <label >Витамины<input type="checkbox"></label>
-          </fieldset>
-          <button class="form__button button" type="submit" name="button"></button>
-          <p class="form__hint">*--Обязательные поля</p>
+          <div class="wrapper">
+            <section class="form__contacts">
+              <h2 class="form__heading form__heading--second">Контактные данные (владельца кота)</h2>
+              <label class="form__label" >
+                <span class="form__label-text">e-mail:*</span>
+                <input class="form__input-text form__input-text--email" type="text" name="email" placeholder="kuklachev@gmail.com">
+              </label>
+              <label class="form__label" >
+                <span class="form__label-text">телефон:*</span>
+                <input class="form__input-text form__input-text--phone" type="text" name="tel" placeholder="8 (960) 900-60-90">
+                </input>
+              </label>
+            </section>
+            <section class="form__comment">
+              <textarea class="form__comment-textarea" name="comment" rows="8" cols="80">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
+            </section>
+            <fieldset class="form__additional">
+              <label >Сахарозаменитель<input type="checkbox"></label>
+              <label >Питьевая вода<input type="checkbox"></label>
+              <label >Молоко<input type="checkbox"></label>
+              <label >Витамины<input type="checkbox"></label>
+            </fieldset>
+              <button class="form__button button" type="submit" name="button"></button>
+              <p class="form__hint">*--Обязательные поля</p>
+          </div>
         </section>
       </form>
-    </div>
   </main>
   <footer class="footer">
     <div class="wrapper footer__top">
@@ -84,7 +100,7 @@
       <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
     <div class="footer__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.400270297827!2d30.3231967!3d59.9387782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8403eb878242dbd5!2sDokhodnyy+Dom+N.+A.+Mel&#39;tsera!5e0!3m2!1sen!2sru!4v1554454070728!5m2!1sen!2sru" width="320" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.400270297827!2d30.3231967!3d59.9387782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8403eb878242dbd5!2sDokhodnyy+Dom+N.+A.+Mel&#39;tsera!5e0!3m2!1sen!2sru!4v1554454070728!5m2!1sen!2sru" width="100%" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="wrapper">
       <a href="" class="footer__link footer__logo"><img src="/img/logo-mobile-header.svg" class="footer__logo-text"></a>
