@@ -1,3 +1,6 @@
+.form{
+  margin-bottom: 33px;
+}
 .form__heading{
   font-size: 14px;
   line-height: (18/14);
@@ -16,21 +19,26 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .form__label:not(:last-child){
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .form__label:last-of-type{
-  margin-bottom: 23px;
+  margin-bottom: 0;
+}
+
+.form__label--with-icon{
+  padding: 12px 35px 10px 15px;
 }
 
 .form__diet{
   border: 1px solid #ededed;
   display: flex;
   flex-direction: column;
-  padding: 19px 20px;
+  padding: 19px 20px 21px;
   margin: 0;
   border: 1px solid #ededed;
   border-width: 1px 0;
@@ -75,11 +83,15 @@
 }
 
 .form__diet .form__label:not(:last-child){
-  margin-bottom: 13px;
+  margin-bottom: 0;
 }
 
 .form__diet .form__label:last-of-type{
   margin-bottom: 0;
+}
+
+.form__cat .form__label:not(:last-child){
+  margin-bottom: 13px;
 }
 
 .form__diet-checkbox-input:checked + .form__diet-checkbox{
@@ -117,3 +129,99 @@
       display: block;
     }
 }
+
+.form__cat-wrapper{
+  margin-bottom: 25px;
+}
+
+.form__icon{
+  position: absolute;
+}
+
+.form__icon--email{  
+  margin-top: -6px;
+  
+  top: 50%;
+  right: 15px;
+}
+
+.form__icon--phone{
+  margin-top: -10px;
+  top:50%;
+  right: 13px;
+}
+
+.form__comment .form__heading{
+  margin-bottom: 35px;
+  &::after, &:after{
+    width: 157px;
+  }
+}
+
+.form__comment-textarea{
+  border: 1px solid #e6e6e6;
+  padding: 12px 13px 30px 14px;
+  font-size: 16px;
+  font-family: $oswd-r;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: (18/16);
+  height: 150px;
+}
+
+.form__additional .form__heading{
+  margin-top: 22px;
+  margin-bottom: 35px;
+  &::after, &:after{
+    width: 136px;
+    top: 15px;
+  }
+}
+
+.form__checkbox-border{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e6e6e6;
+  margin-right: 15px;
+}
+
+.form__checkbox-tick{
+  position: absolute;
+  margin-top: 1px;
+  left: 5px;
+  display: none;
+  fill:$green;
+}
+
+.form__checkbox-input:checked ~ .form__checkbox-tick {
+  display: block;
+}
+
+.form__additional{
+  margin-bottom: 28px;
+}
+
+.form__button{
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  
+  font-size: 16px;
+  font-family: $oswd-r;
+  
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom:7px;
+}
+
+.form__hint{
+  font-size: 14px;
+  font-family: "Arial";
+  line-height: 1.143;
+  text-align: center;
+}
+
+
+
+
