@@ -1,5 +1,6 @@
+@import 'fonts.scss';
 @import 'variables.scss';
-@import 'gift.scss';
+
 @import 'additional.scss';
 @import 'advantages.scss';
 @import 'button.scss';
@@ -7,9 +8,10 @@
 @import 'categories.scss';
 @import 'category.scss';
 @import 'example.scss';
-@import 'fonts.scss';
 @import 'footer.scss';
+@import 'form.scss';
 @import 'header.scss';
+@import 'gift.scss';
 @import 'nav.scss';
 @import 'page.scss';
 @import 'presentation.scss';
@@ -19,7 +21,7 @@
 @import 'wrapper.scss';
 @import 'title.scss';
 @import 'slider-cat';
-@import 'form.scss';
+
 
 html {
   box-sizing: border-box;

@@ -24,12 +24,13 @@
       </ul>
     </nav>
   </header>
-  <main class="page wrapper">
-      <h1 class="page__heading">Каталог продукции</h1>
-      <section class="catalog">
+  <main class="page">
+      <h1 class="page__heading wrapper">Каталог продукции</h1>
+      <section class="catalog wrapper">
         <ul class="catalog__list">
           <li class="catalog__item">
-            <div class="catalog__img-wrapper"><img src="img/chicken-small-mobile@1x.jpg" alt="" class="catalog__img">
+            <div class="catalog__img-wrapper">
+              <img src="img/chicken-small-mobile@1x.jpg" alt="" class="catalog__img">
             </div>
             <div class="catalog__item-info">
               <h4 class="catalog__title">Cat Energy<br>pro 500 Г</h4>
@@ -45,7 +46,9 @@
             <button class="button catalog__button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <img src="img/chicken-big-mobile@1x.jpg" alt="" class="catalog__img">
+            <div class="catalog__img-wrapper">
+              <img src="img/chicken-big-mobile@1x.jpg" alt="" class="catalog__img">
+            </div>
             <div class="catalog__item-info">
               <h4 class="catalog__title">Cat Energy<br>pro 1000 Г</h4>
               <dl class="catalog__descr">
@@ -60,7 +63,9 @@
             <button class="button catalog__button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <img src="img/fish-small-mobile@1x.jpg" alt="" class="catalog__img">
+            <div class="catalog__img-wrapper">
+              <img src="img/fish-small-mobile@1x.jpg" alt="" class="catalog__img">
+            </div>
             <div class="catalog__item-info">
               <h4 class="catalog__title">Cat Energy<br>pro 500 г</h4>
               <dl class="catalog__descr">
@@ -75,7 +80,9 @@
             <button class="button catalog__button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <img src="img/fish-big-mobile@1x.jpg" alt="" class="catalog__img">
+            <div class="catalog__img-wrapper">
+              <img src="img/fish-big-mobile@1x.jpg" alt="" class="catalog__img">
+            </div>
             <div class="catalog__item-info">
               <h4 class="catalog__title">Cat Energy<br>pro 1000 г</h4>
               <dl class="catalog__descr">
@@ -90,7 +97,9 @@
             <button class="button catalog__button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <img src="img/buckwheat-small-mobile@1x.jpg" alt="" class="catalog__img">
+            <div class="catalog__img-wrapper">
+              <img src="img/buckwheat-small-mobile@1x.jpg" alt="" class="catalog__img">
+            </div>
             <div class="catalog__item-info">
               <h4 class="catalog__title">Cat Energy<br>slim 500 г</h4>
               <dl class="catalog__descr">
@@ -105,7 +114,9 @@
             <button class="button catalog__button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <img src="img/buckwheat-big-mobile@1x.jpg" alt="" class="catalog__img">
+            <div class="catalog__img-wrapper">
+              <img src="img/buckwheat-big-mobile@1x.jpg" alt="" class="catalog__img">
+            </div>
             <div class="catalog__item-info">
               <h4 class="catalog__title">Cat Energy<br>slim 1000 г</h4>
               <dl class="catalog__descr">
@@ -120,7 +131,9 @@
             <button class="button catalog__button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <img src="img/rice-small-mobile@1x.jpg" alt="" class="catalog__img">
+            <div class="catalog__img-wrapper">
+              <img src="img/rice-small-mobile@1x.jpg" alt="" class="catalog__img">
+            </div>
             <div class="catalog__item-info">
               <h4 class="catalog__title">Cat Energy<br>slim 500 г</h4>
               <dl class="catalog__descr">
@@ -135,15 +148,20 @@
             <button class="button catalog__button">Заказать</button>
           </li>
           <li class="catalog__item catalog__show-more show-more">
-            <button class="show-more__image-show" type="button" name="button" src="" alt="Посмотреть все продукты"></button>
+            <button class="show-more__btn" type="button" name="button" src="" alt="Посмотреть все продукты"><svg class="show-more__btn-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 30 30" width="30px" height="30px" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+            <polygon points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "/>
+            </svg>
+
+            </button>
             <h4 class="show-more__title">Показать ещё 100500 товаров</h4>
-            <span class="show-more-text">На самом деле вкусов гораздо больше!</span>
+            <span class="show-more__text">На самом деле вкусов гораздо больше!</span>
             <a class="button show-more__button">Показать все</a>
           </li>
         </ul>
       </section>
-      <section class="additional">
-        <h2 class="additional__heading additional__heading--second ">Дополнительные товары</h2>
+      <section class="additional wrapper">
+        <h2 class="additional__heading">Дополнительные товары</h2>
         <ul class="additional__list">
           <li class="additional__item">
             <h3 class="additional__title">Сахарозаменитель</h3>

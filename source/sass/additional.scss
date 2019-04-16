@@ -1,0 +1,15 @@
+.additional__heading{
+  font-size: 24px;
+  font-family: $oswd-r;
+  color: #444;
+  line-height: 1;
+  text-align: left;
+  
+
+  &::before, &:before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: $green;
+  }
+}
