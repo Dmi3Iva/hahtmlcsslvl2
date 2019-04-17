@@ -30,18 +30,21 @@
 .example__result{
   width: 50%;
   text-align: center;
-  position: relative;
 }
 
-.example__result-descr{
+.example__result-wrapper{
   display: block;
-  font-family: $oswd-r;
-  font-size: 24px;
-  text-transform: uppercase;
   border-radius: 2px;
   padding: 7px 0px 10px;
   width: 89%;
   border:1px solid #cdcdcd;
+  position: relative;
+}
+
+.example__result-descr{
+  font-family: $oswd-r;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 .example__result:nth-child(2n) >.example__result-descr{
@@ -60,9 +63,10 @@
   text-align: center;
 
   top: 47px;
-  left: 17px;
+  left: calc(50% - 43.5px);  
 }
 
+
 .example__result:nth-child(2n) .example__result-name{
-  left: 35px;
+  left: calc(50% - 43.5px);
 }
