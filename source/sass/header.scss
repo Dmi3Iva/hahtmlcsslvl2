@@ -18,6 +18,10 @@
 .header__icon-logo{
   width: 35px;
   height: 38px;
+  background-image: url(/img/icon-logo-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .header__text-logo{
@@ -42,3 +46,31 @@
   background-repeat: no-repeat;
 }
 
+@media (min-width: 767px){
+  .header{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
+  }
+  .header__top{
+    width: 173px;
+    padding: 0;
+    border-bottom: none;
+  }
+  .header__icon-logo{
+    width: 69px;
+    height: 58px;
+  }
+  .header__toggle{
+    display: none;
+  }
+  .header__nav{
+    display: flex;
+    flex-direction: row;
+  }
+  .header__logo{
+    width: 84px;
+    height: 16px;
+  }
+}

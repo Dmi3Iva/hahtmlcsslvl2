@@ -24,3 +24,37 @@
   padding: 22px 0 ;
   display: inline-block;
 }
+
+@media (min-width:767px){
+  .nav__list{
+    display: flex;
+    margin-left: 95px;
+  }
+  
+  .nav__item:not(:last-child){
+    margin-right: 35px;
+  }
+  
+  .nav__link{
+    font-size: 18px;
+    font-family: "Oswald";
+    color: rgb(34, 34, 34);
+  }
+  
+  .nav__item{
+    border-bottom: none;
+  }
+  
+  .nav__item--active{
+    position: relative;
+    &:before, &::before{
+      content: "";
+      position: absolute;
+      width: 97%;
+      height: 2px;
+      background-color: $green;
+      bottom: 13px;
+      left: 1px;
+    }
+  }
+}
