@@ -46,13 +46,47 @@
 }
 
 @media (min-width:767px){
+  .promo{
+    min-height: 800px;
+  }
   .promo__background{
     background: none;
   }
+  
   .promo__title{
     font-size: 60px;
-    color:#111;
+    color: #111;  
     margin-top: 40px;
-    padding-left: 92px;
+    padding-left: 116px;
+    padding-right: 170px;
+    text-align: start;
+  }
+  
+  .promo__slogan{
+    font-size: 20px;
+    color: #111;
+    text-align: left;
+    padding-left: 118px;
+    margin-top: 36px;
+  }
+  
+  .promo__image{
+    right: 28px;
+    top: 250px;
+    left: unset;
+    width: 630px;
+    height: 609px;
+    z-index: 0;
+  }
+  
+  .promo__button,.promo__button:link,.promo__button:visited{
+    position: absolute;
+    top: 279px;
+    left: 119px;
+    margin: 0;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 28px;
+    padding-bottom: 11px;
   }
 }
