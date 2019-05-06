@@ -40,10 +40,6 @@
 
 .category--pro .category__header{
   margin-top: 8px;
-  // &:before, &::before{
-  //   top:0px;
-  //   left: 0px;
-  // }
 }
 
 .category__icon-slim{
@@ -94,4 +90,8 @@
     height: 11px;
     margin-left: 11px;
   }
+}
+
+@media (min-width:767px){
+  
 }
