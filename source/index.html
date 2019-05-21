@@ -8,10 +8,16 @@
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header no-js">
     <div class="header__top">
       <a href="" class="header__link"><div class="header__icon-logo"></div></a>
-      <a href="" class="header__link"><img src="/img/logo-mobile-header.svg" class="header__logo  header__text-logo"></a>
+      <a href="" class="header__link">
+        <picture>
+          <source media="(min-width:1440px)" src="/img/logo-desktop-header.svg" >
+          <source media="(min-width:767px)" src="/img/logo-tablet-header.svg" >
+          <img src="/img/logo-mobile-header.svg" class="header__logo  header__text-logo">  
+        </picture>
+      </a>
       <button class="header__toggle" type="button">
         <span class="header__toggle-burger"></span>
       </button>
@@ -30,7 +36,12 @@
         <div class="wrapper">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <img src="img/index-can-mobile@1x.png" alt="Яркая упаковка кошачьего корма" class="promo__image">
+          <picture>
+            <source media="(min-width:1440px)" srcset="img/index-can-desktop@2x.png, img/index-can-desktop@1x.png 1x">
+            <source media="(min-width:767px)" srcset="img/index-can-tablet@2x.jpg 2x,
+            img/index-can-tablet@1x.jpg 1x">  
+            <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Яркая упаковка кошачьего корма" class="promo__image">  
+          </picture>
         </div>
       </div>
       <a href="form.html" class="promo__button button">Подобрать программу</a>
@@ -104,10 +115,19 @@
           <div class="presentation__slider-cat slider-cat">
             <ul class="slider-cat__list">
               <li class="slider-cat__item slider-cat__item--show ">
-                <img src="img/before-mobile@1x.png" alt="Толстый кот" class="slider-cat__image">
+                <picture>
+                  <source media="(min-width:1440px)"src="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width:767px)"src="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот" class="slider-cat__image">
+                </picture>
               </li>
               <li class="slider-cat__item">
-                <img src="img/after-mobile@1x.png" alt="Худой и красивый кот" class="slider-cat__image">
+                <picture>
+                  <source media="(min-width:1440px)"src="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width:767px)"src="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Толстый кот" class="slider-cat__image">
+                </picture>
+                
               </li>
             </ul>
             <div class="presentation__tooggle">
