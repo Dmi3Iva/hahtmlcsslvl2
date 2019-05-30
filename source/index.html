@@ -10,13 +10,15 @@
 <body>
   <header class="header no-js">
     <div class="header__top">
-      <a href="" class="header__link"><div class="header__icon-logo"></div></a>
       <a href="" class="header__link">
         <picture>
-          <source media="(min-width:1440px)" src="/img/logo-desktop-header.svg" >
-          <source media="(min-width:767px)" src="/img/logo-tablet-header.svg" >
-          <img src="/img/logo-mobile-header.svg" class="header__logo  header__text-logo">  
+          <source media="(min-width:1440px)" srcset="/img/logo-desktop.svg">
+          <source media="(min-width:767px)" srcset="/img/logo-tablet.svg">
+          <img src="/img/icon-logo-mobile.svg" class="header__icon-logo">  
         </picture>
+      </a>
+      <a href="" class="header__link">
+          <img src="/img/logo-mobile-header.svg" class="header__logo  header__text-logo">  
       </a>
       <button class="header__toggle" type="button">
         <span class="header__toggle-burger"></span>
@@ -109,28 +111,28 @@
               </div>
             </li>
           </ul>
-          <h4 class="presentation__heading example__subheading">Затраты на питание: 15 000 руб.</h4>
+          <h4 class="presentation__heading example__subheading">Затраты на питание:<br display=none class="example__br"> 15 000 руб.</h4>
         </div>
         <section class="example__presentation presentation">
           <div class="presentation__slider-cat slider-cat">
             <ul class="slider-cat__list">
               <li class="slider-cat__item slider-cat__item--show ">
                 <picture>
-                  <source media="(min-width:1440px)"src="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                  <source media="(min-width:767px)"src="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <source media="(min-width:1440px)"srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width:767px)"srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                   <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот" class="slider-cat__image">
                 </picture>
               </li>
               <li class="slider-cat__item">
                 <picture>
-                  <source media="(min-width:1440px)"src="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                  <source media="(min-width:767px)"src="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                  <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Толстый кот" class="slider-cat__image">
+                  <source media="(min-width:1440px)"srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width:766px)"srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стройный кот" class="slider-cat__image">
                 </picture>
                 
               </li>
             </ul>
-            <div class="presentation__tooggle">
+            <div class="presentation__tooggle-mobile">
               <label class="presentation__label" >
                 <input class="visually-hidden presentation__checkbox-input" type="checkbox" name="cat-before-after-checkbox" value="" id="toggle-before-after">
                 <span class="presentation__before">Было</span>
@@ -146,12 +148,12 @@
   <footer class="footer">
     <div class="wrapper footer__top">
       <p class="footer__offer">приглашаем<br>к сотрудничеству дилеров!</p>
-      <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="footer__address">ул. Большая Конюшенная, д. 19/8<br class="br__tablet"><br class="br__tablet"> Санкт-Петербург</p>
     </div>
     <div class="footer__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.400270297827!2d30.3231967!3d59.9387782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8403eb878242dbd5!2sDokhodnyy+Dom+N.+A.+Mel&#39;tsera!5e0!3m2!1sen!2sru!4v1554454070728!5m2!1sen!2sru" width="100%" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe class="footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.400270297827!2d30.3231967!3d59.9387782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8403eb878242dbd5!2sDokhodnyy+Dom+N.+A.+Mel&#39;tsera!5e0!3m2!1sen!2sru!4v1554454070728!5m2!1sen!2sru" width="100%" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="wrapper">
+    <div class="wrapper footer__bottom">
       <a href="" class="footer__link footer__logo"><img src="/img/logo-mobile-header.svg" class="footer__logo-text"></a>
       <ul class="footer__social">
         <li class="footer__social-item">

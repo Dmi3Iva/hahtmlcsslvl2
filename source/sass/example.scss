@@ -85,20 +85,26 @@
   text-transform: uppercase;
 }
 
+.example__br{
+  display: none;
+}
+
 @media (min-width: $tablet-width){
   .example{
     padding-top: 2px;
-    padding-bottom: 36px;
+    padding-bottom: 57px;
   }
 
   .example__heading{
     font-size: 60px;
     line-height: 1;
     margin-top: 0;
-    margin-bottom: 66px;
+    margin-bottom: 63px;
   }
 
   .example__text{
+    margin-top: 22px;
+    margin-bottom: 27px;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -110,54 +116,55 @@
   br.example__br--tablet{
     display: inline;
   }
+  .example__features{
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+  }
   
   .example__results{
-    margin-top: 53px;
     width: 365px;
   }
 
   .example__result{
-    width: 50%;
-    text-align: center;
   }
 
   .example__result-wrapper{
-    display: block;
-    border-radius: 2px;
-    padding: 7px 0px 10px;
-    width: 89%;
-    border:1px solid #cdcdcd;
-    position: relative;
+    padding: 10px 0 14px;
+    margin-left: -2px;
+    width: 162px;
   }
 
   .example__result-descr{
-    font-family: $oswd-r;
-    font-size: 24px;
-    text-transform: uppercase;
+    font-size: 30px;
   }
-
+  
   .example__result:nth-child(2n) >.example__result-wrapper{
-    margin-left: auto;
+  }
+  
+  .example__result:nth-child(2n) .example__result-name{
+    width: 142px;
+    left: 10px;
   }
 
   .example__result-name{
-    font-family: Arial;
-    font-size: 12px;
-    line-height: 1;
-    text-transform: lowercase;
-    position: absolute;
-    background-color: #f2f2f2;
-    width: 87px;
-    padding: 0 15px;
-    text-align: center;
-
-    top: 47px;
-    left: calc(50% - 43.5px);  
+    width: 114px;
+    padding: 0;
+    top: 63px;
+    font-size: 14px;
+    left: 23px;
   }
   
   .example__features{
-    display: flex;
-    flex-wrap: wrap;
   }
-
+  
+  .example__subheading{
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  
+  .example__br{
+    display: inline;
+  }
 }

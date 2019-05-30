@@ -22,3 +22,15 @@
 .slider-cat__image{
   margin-left: -20px;
 }
+
+
+@media (min-width:767px){
+  .slider-cat__image{
+    margin-left: 14px;
+  }
+  
+  .slider-cat__list{
+    margin-bottom: 12px;
+  }
+}
+

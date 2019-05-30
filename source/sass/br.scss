@@ -1,0 +1,8 @@
+.br__tablet{
+  display: none;
+}
+@media (min-width: 767px) and (max-width: 1400px){
+  .br__tablet{
+    display: inline; 
+  }  
+}
