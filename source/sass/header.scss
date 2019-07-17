@@ -86,10 +86,21 @@
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: $desktop-width){
   .header{
     max-width: 1440px;
     margin:0 auto;
+    padding: 53px 110px 0;
+  }
+  
+  .header__top{
+    width: 201px;
+  }
+  
+  .header__icon-logo{
+    width: 201px;
+    height: 60px;
   }
   
 }
+

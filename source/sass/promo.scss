@@ -96,3 +96,11 @@
     padding-bottom: 11px;
   }
 }
+
+@media (min-width: $desktop-width){
+  .promo{
+    &::before, &:before{
+      background-image: url();
+    }
+  }
+}
