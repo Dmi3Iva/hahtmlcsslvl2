@@ -40,9 +40,10 @@ window.onload  = function(){
       btn.style.left =  pos + 'px';
       
       inputResult.value = pos/(btn.parentElement.clientWidth-12);
-      console.log('pos:'+pos);
-      console.log('parent:'+ (btn.parentElement.clientWidth-12));
-      console.log(inputResult.value);
+      // console.log('pos:'+pos);
+      // console.log('parent:'+ (btn.parentElement.clientWidth-12));
+      // console.log(inputResult.value);
+      changeWidth(inputResult.value); 
     }
     
     function onMouseMove(event) {
@@ -56,7 +57,17 @@ window.onload  = function(){
       this.onmouseup = null;
     };
   }
-
+  // TODO: try this idea
+  let beforeImg = document.querySelector('.slider-cat__item:first-child');
+  let afterImg = document.querySelector('.slider-cat__item:last-child');  
+  let parentWidth = document.querySelector('.slider-cat__list').offsetWidth ;//style.width;
+  
+  function changeWidth(value){
+    beforeImg.style.width = value * parentWidth + 'px';
+    
+    console.log(beforeImg.style.width);
+  }
+  
 }//end window onload
 
 function getPositionX(elem){

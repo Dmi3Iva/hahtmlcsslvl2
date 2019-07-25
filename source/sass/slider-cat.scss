@@ -8,15 +8,11 @@
 }
 
 .slider-cat__item{
-  display: none;
+  display: block;
   margin: 0 auto;
   padding-left: 0px;
   width: 100%;
   text-align: center;
-}
-
-.slider-cat__item--show{
-  display: block;
 }
 
 .slider-cat__image{
@@ -31,6 +27,20 @@
   
   .slider-cat__list{
     margin-bottom: 12px;
+    position: relative;
+  }
+  
+  .slider-cat__item:first-child{
+    position: absolute;
+    width: 368px;
+    margin-left: 0;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #F2F2F2;
+  }
+  
+  .slider-cat__item:last-child{
+    z-index: 1;
   }
 }
 
