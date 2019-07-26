@@ -16,7 +16,31 @@
 }
 
 .slider-cat__image{
-  margin-left: -20px;
+  margin-left: -19px;
+}
+
+.slider-cat__list{
+  position: relative;
+}
+
+.slider-cat__item:first-child{
+  position: absolute;
+  width: 100%;
+  margin-left: 0;
+  overflow: hidden;
+  z-index: 0;
+  background-color: #F2F2F2;
+  transition: width .3s;
+}
+
+.slider-cat__item:last-child{
+  z-index: 1;
+}
+
+@media(max-width:767px){
+  .slider-cat__item:first-child.slider-cat__item--close{
+    width: 0;
+  }
 }
 
 
@@ -27,20 +51,6 @@
   
   .slider-cat__list{
     margin-bottom: 12px;
-    position: relative;
-  }
-  
-  .slider-cat__item:first-child{
-    position: absolute;
-    width: 368px;
-    margin-left: 0;
-    overflow: hidden;
-    z-index: 0;
-    background-color: #F2F2F2;
-  }
-  
-  .slider-cat__item:last-child{
-    z-index: 1;
-  }
+  }  
 }
 

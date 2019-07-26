@@ -11,10 +11,15 @@
   border-bottom: 1px solid #e6e6e6;
 }
 .header__nav{
-  display: none;
+  max-height: 0;
+  transition: max-height .3s;
 }
 .no-js .header__nav{
   display: block;
+}
+
+.header--open .header__nav{
+    max-height: 400px;
 }
 .header__link{
   text-decoration: none;

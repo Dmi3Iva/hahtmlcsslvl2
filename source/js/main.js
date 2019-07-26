@@ -8,7 +8,7 @@ window.onload  = function(){
   let burger = document.querySelector('.header__toggle-burger');
   
   burger.addEventListener('click', function(){
-      header.classList.toggle('header__close');
+      header.classList.toggle('header--open');
   });
   
   let before = document.querySelectorAll('slider-cat__item')[0];
@@ -57,7 +57,7 @@ window.onload  = function(){
       this.onmouseup = null;
     };
   }
-  // TODO: try this idea
+  // 
   let beforeImg = document.querySelector('.slider-cat__item:first-child');
   let afterImg = document.querySelector('.slider-cat__item:last-child');  
   let parentWidth = document.querySelector('.slider-cat__list').offsetWidth ;//style.width;
@@ -68,7 +68,14 @@ window.onload  = function(){
     console.log(beforeImg.style.width);
   }
   
+  //for mobile
+  let buttonSliderMoblie = document.querySelector('.presentation__checkbox-input').addEventListener('click',function(){
+    document.querySelector('.slider-cat__item:first-child').classList.toggle('slider-cat__item--close');
+  });
+
 }//end window onload
+
+
 
 function getPositionX(elem){
   return elem.getBoundingClientRect().left ;
