@@ -30,7 +30,7 @@
   overflow: hidden;
   z-index: 0;
   background-color: #F2F2F2;
-  transition: width .3s;
+  
 }
 
 .slider-cat__item:last-child{
@@ -38,6 +38,10 @@
 }
 
 @media(max-width:767px){
+  .slider-cat__item:first-child{
+    transition: width .3s;  
+  }
+  
   .slider-cat__item:first-child.slider-cat__item--close{
     width: 0;
   }

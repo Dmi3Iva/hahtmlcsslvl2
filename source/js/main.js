@@ -40,9 +40,6 @@ window.onload  = function(){
       btn.style.left =  pos + 'px';
       
       inputResult.value = pos/(btn.parentElement.clientWidth-12);
-      // console.log('pos:'+pos);
-      // console.log('parent:'+ (btn.parentElement.clientWidth-12));
-      // console.log(inputResult.value);
       changeWidth(inputResult.value); 
     }
     
@@ -57,25 +54,39 @@ window.onload  = function(){
       this.onmouseup = null;
     };
   }
-  // 
-  let beforeImg = document.querySelector('.slider-cat__item:first-child');
-  let afterImg = document.querySelector('.slider-cat__item:last-child');  
-  let parentWidth = document.querySelector('.slider-cat__list').offsetWidth ;//style.width;
-  
-  function changeWidth(value){
-    beforeImg.style.width = value * parentWidth + 'px';
-    
-    console.log(beforeImg.style.width);
-  }
   
   //for mobile
-  let buttonSliderMoblie = document.querySelector('.presentation__checkbox-input').addEventListener('click',function(){
-    document.querySelector('.slider-cat__item:first-child').classList.toggle('slider-cat__item--close');
-  });
+  if(window.innerWidth <767){
+    
+    console.log("activated");
+    document.querySelector('.presentation__checkbox-input').addEventListener('click',function(){
+      document.querySelector('.slider-cat__item:first-child').classList.toggle('slider-cat__item--close');
+    });
+    
+  }
+  else{
+    //desktop
+    let line = document.querySelector('.presentation__line');
+    line.addEventListener('click',function(e){
+      let rect = line.getBoundingClientRect();
+      console.log((e.clientX-rect.left) / (rect.right - rect.left));
+      changeWidth((e.clientX-rect.left) / (rect.right - rect.left));
+    });
+    
+    let beforeImg = document.querySelector('.slider-cat__item:first-child');
+    let afterImg = document.querySelector('.slider-cat__item:last-child');  
+    let parentWidth = document.querySelector('.slider-cat__list').offsetWidth ;//style.width;
+    
+    function changeWidth(value){
+      beforeImg.style.width = value * parentWidth + 'px';
+      
+      console.log(beforeImg.style.width);
+    }
+    
+    changeWidth(0.5);
+  }
 
 }//end window onload
-
-
 
 function getPositionX(elem){
   return elem.getBoundingClientRect().left ;
