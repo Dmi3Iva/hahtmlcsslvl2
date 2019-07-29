@@ -59,7 +59,7 @@
   font-family: Arial;
 }
 
-@media (min-width:767px){
+@media (min-width:$tablet){
   
   .footer__top{
     padding: 46px 72px 37px 70px;

@@ -56,11 +56,11 @@
   display: none;
 }
 
-@media (min-width: 767px){
+@media (min-width: $tablet){
   .header{
     display: flex;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 12px;
     padding-top: 24px;
     justify-content: space-between;
   }
@@ -91,7 +91,7 @@
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop){
   .header{
     max-width: 1440px;
     margin:0 auto;

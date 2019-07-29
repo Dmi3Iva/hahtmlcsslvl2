@@ -45,7 +45,7 @@
   margin-top: 120px;
 }
 
-@media (min-width:767px){
+@media (min-width:$tablet){
   .promo{
     min-height: 800px;
     position: relative;
@@ -88,16 +88,16 @@
   .promo__button,.promo__button:link,.promo__button:visited{
     position: relative;
     top: -47px;
-    left: -143px;
+    left: -135px;
     margin: 0;
     font-size: 20px;
     padding-left: 25px;
     padding-right: 28px;
-    padding-bottom: 11px;
+    padding-bottom: 12px;
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop){
   .promo{
     &::before, &:before{
       background-image: url();

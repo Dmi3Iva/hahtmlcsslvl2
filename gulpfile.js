@@ -35,7 +35,7 @@ const paths = {
     dest: 'docs/'
   },
   images: {
-    src: 'source/img/**/*.{jpg,svg,png}',
+    src: 'source/img/*.{jpg,svg,png}',
     dest: 'docs/img/'
   },
   fonts: {
@@ -155,12 +155,20 @@ gulp.task('sprite', function () {
 // Копирование файлов
 gulp.task('copy', function  () {
   return gulp.src([
-    paths.fonts.src,
     paths.images.src,
   ], {
     base: paths.root
   })
   .pipe(gulp.dest('docs'));
+});
+
+gulp.task('copyFonts', function  () {
+  return gulp.src([
+    paths.fonts.src,
+  ], {
+    base: paths.root
+  })
+  .pipe(gulp.dest(paths.fonts.dest));
 });
 
 // Сборка проекта
