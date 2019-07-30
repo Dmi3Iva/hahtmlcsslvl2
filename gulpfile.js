@@ -39,7 +39,7 @@ const paths = {
     dest: 'docs/img/'
   },
   fonts: {
-    src: 'source/fonts/**/*.{woff,woff2}',
+    src: 'source/fonts/*.{woff,woff2}',
     dest: 'docs/assets/fonts/'
   }
 };
@@ -163,11 +163,9 @@ gulp.task('copy', function  () {
 });
 
 gulp.task('copyFonts', function  () {
-  return gulp.src([
+  return gulp.src(
     paths.fonts.src,
-  ], {
-    base: paths.root
-  })
+  )
   .pipe(gulp.dest(paths.fonts.dest));
 });
 
@@ -176,10 +174,11 @@ gulp.task('build', gulp.series(
   'clean',
   'uglify',
   'copy',
+  'copyFonts',
   'images',
-  // 'webpImage',
+  'webpImage',
   'style',
-  // 'sprite',
+  'sprite',
   'html',
   'uncss'
 ));

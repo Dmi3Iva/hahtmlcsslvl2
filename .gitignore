@@ -12,4 +12,3 @@ npm-debug.*
 source/css/*.css
 Thumbs.db
 docs/
-docs/css/style.min.css
