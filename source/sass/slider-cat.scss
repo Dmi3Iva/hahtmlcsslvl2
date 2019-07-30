@@ -36,8 +36,7 @@
 .slider-cat__item:last-child{
   z-index: 1;
 }
-
-@media(min-width:$tablet){
+@media(max-width:$tablet){
   .slider-cat__item:first-child{
     transition: width .3s;  
   }
@@ -45,6 +44,10 @@
   .slider-cat__item:first-child.slider-cat__item--close{
     width: 0;
   }
+}
+
+
+@media(min-width:$tablet){
 
   .slider-cat__image{
     margin-left: 14px;

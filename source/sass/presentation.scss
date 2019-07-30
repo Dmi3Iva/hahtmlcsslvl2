@@ -44,22 +44,15 @@
   }
 }
 
+.presentation__checkbox-input:checked ~ .presentation__checkbox{
+  &::after, &:after{
+    top: 4px;
+    left: 43px;
+  }
+}
+
 
 @media (min-width:$tablet){
-  .presentation__checkbox-input:checked ~ .presentation__checkbox{
-    &::after, &:after{
-      top: 4px;
-      left: 43px;
-    }
-  }
-  
-  .presentation__tooggle-mobile{
-    display: none;
-  }
-  
-  .presentation__tooggle-mobile{
-    display: unset;
-  }
   
   .presentation__tooggle-mobile{
     font-size: 20px;
