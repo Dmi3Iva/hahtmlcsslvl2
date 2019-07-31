@@ -94,7 +94,7 @@
       </div>
     </section>
     <section class="example">
-      <div class="wrapper">
+      <div class="wrapper example__wrapper">
         <h3 class="example__heading">Живой пример</h3>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br> Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и<br class="example__br--tablet"> по-прежнему спит по 16 часов в день. </p>
         <div class="example__features">
@@ -114,37 +114,36 @@
           </ul>
           <h4 class="presentation__heading example__subheading">Затраты на питание:<br display=none class="example__br"> 15 000 руб.</h4>
         </div>
-        <section class="example__presentation presentation">
-          <div class="presentation__slider-cat slider-cat">
-            <ul class="slider-cat__list">
-              <li class="slider-cat__item slider-cat__item--show ">
-                <picture>
-                  <source media="(min-width:1440px)"srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                  <source media="(min-width:768px)"srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                  <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот" class="slider-cat__image">
-                </picture>
-              </li>
-              <li class="slider-cat__item">
-                <picture>
-                  <source media="(min-width:1440px)"srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                  <source media="(min-width:768px)"srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                  <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стройный кот" class="slider-cat__image">
-                </picture>
-                
-              </li>
-            </ul>
-            <div class="presentation__tooggle-mobile">
-              <label class="presentation__label" >
-                <input class="visually-hidden presentation__checkbox-input" type="checkbox" name="cat-before-after-checkbox" value="" id="toggle-before-after">
-                <span class="presentation__before">Было</span>
-                <span class="presentation__line presentation__checkbox">
-                  <span class="presentation__button"></span>
-                </span>
-                <span class="presentation__after">Стало</span>
-              </label>
-            </div>
+        <div class="example__slider-cat slider-cat">
+          <div class="slider-cat__first">
+            <picture>
+              <source media="(min-width:1440px)"srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width:768px)"srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот" class="slider-cat__image">
+            </picture>
           </div>
-        </section>
+          <div class="slider-cat__second">
+            <picture>
+              <source media="(min-width:1440px)"srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width:768px)"srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стройный кот" class="slider-cat__image">
+            </picture>
+          </div>
+          <div class="slider-cat__control">
+            <p class="slider-cat__before">Было</p>
+            <div class="slider-cat__line">
+              <div class="slider-cat__button"></div>
+            </div>
+            <p class="slider-cat__after">Стало</p>
+          </div>
+          <div class="slider-cat__control slider-cat__control--mobile">
+            <p class="slider-cat__before">Было</p>
+            <div class="slider-cat__line">
+              <div class="slider-cat__button"></div>
+            </div>
+            <p class="slider-cat__after">Стало</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
