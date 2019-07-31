@@ -1,88 +1,63 @@
-.slider-cat{
-  margin-top: 35px;
-}
-
-.slider-cat__list{
-  padding: 0;
-  list-style-type: none;
-}
-
-.slider-cat__item{
-  display: block;
-  margin: 0 auto;
-  padding-left: 0px;
-  width: 100%;
-  text-align: center;
-}
-
-.slider-cat__image{
-  margin-left: -19px;
-}
-
-.slider-cat__list{
-  position: relative;
-}
-
-.slider-cat__item:first-child{
-  position: absolute;
-  width: 100%;
-  margin-left: 0;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.slider-cat__item:last-child{
-  z-index: 1;
-}
-@media(max-width:($tablet - 1px)){
-  .slider-cat__item:first-child{
-    transition: width .3s;  
-    background-color: #F2F2F2;
-  }
-  
-  .slider-cat__item:first-child.slider-cat__item--close{
-    width: 0;
-  }
-}
-
-
-@media(min-width:$tablet){
-  
+@media(min-width: $tablet){
   .slider-cat{
-    margin-top: 66px;
-  }
-
-  .slider-cat__image{
-    margin-left: 14px;
+    position: relative;
+    z-index: 0;
+    height: 522px;
+    margin-top: 65px;
   }
   
-  .slider-cat__list{
-    margin-bottom: 12px;
+  .slider-cat__first, .slider-cat__second{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+  }
+  .slider-cat__overflow{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+  
+  .slider-cat__first{
+    left: 0;
     
-    &::after, &:after {
+    &:before, &::before {
+      content: "";
       background-color: #f2f2f2;
+      width: 100%;
+      height: 462px;
       position: absolute;
-      width: 50vw;
-      height: 464px;
-      content: "";
-      z-index: 0;
-      bottom: -108px;
-      left: -30px;
+      bottom: -110px;
     }
-    &::before, &:before {
-      background-color: #e6e6e6;
-      position: absolute;
-      width: 50vw;
-      height: 464px;
-      content: "";
-      z-index: 0;
-      bottom: -108px;
-      right: -30px;
-    }
-  }  
+  }
   
-  .slider-cat__item:first-child{
-    background-color: #FFF;
+  .slider-cat__second{
+    right: 0;
+    
+    &:before, &::before {
+      content: "";
+      background-color: #e6e6e6  ;
+      width: 100%;
+      height: 462px;
+      position: absolute;
+      bottom: -110px;
+    }
+  }
+  
+  .slider-cat__image{
+    position: absolute;
+    width: 690px;
+    z-index: 10;
+  }
+  
+  .slider-cat__first .slider-cat__image{
+    margin-left: 46px;
+  }
+  
+  .slider-cat__second .slider-cat__image{
+    right: 32px;
+  }
+  
+  .slider-cat__control--mobile{
+    display: none;
   }
 }
-
