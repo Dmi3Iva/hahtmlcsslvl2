@@ -1,26 +1,34 @@
-@media(min-width: $tablet){
-  .slider-cat{
+.slider-cat{
+  font-family: $oswd-r;
+  text-transform: uppercase;
+}
+
+@media(min-width: $tablet) {
+  .slider-cat {
     position: relative;
     z-index: 0;
     height: 522px;
     margin-top: 65px;
   }
-  
-  .slider-cat__first, .slider-cat__second{
+
+  .slider-cat__first,
+  .slider-cat__second {
     position: absolute;
     width: 50%;
     height: 100%;
   }
-  .slider-cat__overflow{
+
+  .slider-cat__overflow {
     overflow: hidden;
     position: relative;
     height: 100%;
   }
-  
-  .slider-cat__first{
+
+  .slider-cat__first {
     left: 0;
-    
-    &:before, &::before {
+
+    &::before,
+    &:before {
       content: "";
       background-color: #f2f2f2;
       width: 100%;
@@ -29,35 +37,89 @@
       bottom: -110px;
     }
   }
-  
-  .slider-cat__second{
+
+  .slider-cat__second {
     right: 0;
-    
-    &:before, &::before {
+
+    &::before,
+    &:before {
       content: "";
-      background-color: #e6e6e6  ;
+      background-color: #e6e6e6;
       width: 100%;
       height: 462px;
       position: absolute;
       bottom: -110px;
     }
   }
-  
-  .slider-cat__image{
+
+  .slider-cat__image {
     position: absolute;
     width: 690px;
     z-index: 10;
   }
-  
-  .slider-cat__first .slider-cat__image{
+
+  .slider-cat__first .slider-cat__image {
     margin-left: 46px;
   }
-  
-  .slider-cat__second .slider-cat__image{
+
+  .slider-cat__second .slider-cat__image {
     right: 32px;
   }
   
-  .slider-cat__control--mobile{
+  .slider-cat__control {
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+    bottom: -61px;
+    font-size: 20px;
+    padding: 0 99px;
+  }
+  
+  .slider-cat__before,.slider-cat__after{
+    border-bottom: 1px dotted #000;
+    padding-bottom: 1px;
+  }
+  
+  .slider-cat__line{
+    border-radius: 2px;
+    background-color: #dcdcdc;
+    width: 428px;
+    height: 6px;
+    margin-bottom: 33px;
+    position: relative;
+  }
+  
+  .slider-cat__button{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(205, 205, 205);
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);  
+    width: 34px;
+    height: 34px;
+    position: relative;
+    z-index: 5;
+    top: -13px;
+    left: 200px;
+    
+    &:after, &::after{
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: rgb(104, 183, 56);
+      z-index: 10;
+      content: "";
+      border-radius: 50%;
+      top: 12px;
+      left: 12px;
+    }
+  }
+
+  .slider-cat__control--mobile {
     display: none;
   }
 }
