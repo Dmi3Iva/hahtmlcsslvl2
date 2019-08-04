@@ -38,8 +38,8 @@ window.onload  = function(){
   });
   
   function changeWidth(value){
-    before.style.width = value * 100 + '%';
-    after.style.width = 100 - (value * 100) + '%';    
+    after.style.width = value * 100 + '%';
+    before.style.width = 100 - (value * 100) + '%';    
   }    
   
   changeWidth(0.5);
