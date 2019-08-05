@@ -1,65 +1,133 @@
 .slider-cat{
   font-family: $oswd-r;
   text-transform: uppercase;
+  position: relative;
+  z-index: 0;
+  height: 297px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-cat__overflow {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.slider-cat__cats {
+    height: 240px;
+    margin-top: 35px;
+}
+
+.slider-cat__first .slider-cat__overflow{
+  margin-left: auto;
+}
+.slider-cat__first, .slider-cat__second{
+  height: 100%; 
+  position: absolute;
+}
+
+.slider-cat__first {
+  left: 0;
+}
+
+.slider-cat__second {
+  right: 0;
+}
+
+.slider-cat__image {
+  position: absolute;
+  width: 320px;
+  z-index: 10;
+}
+
+.slider-cat__control {
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-cat__line{
+  border-radius: 5px;
+  border: 1px solid #cdcdcd;
+  background-color: #fff;
+  width: 80px;
+  height: 12px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.slider-cat__button{
+  background-color: rgb(104, 183, 56);
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  top: 2px;
+  left: 6px;
+  border-radius: 3px;
+}
+
+
+.slider-cat__control{
+  display: none;
+}
+
+.slider-cat__control--mobile{
+  display: flex;
+  padding: 0 59px 0 63px;
+  margin-top: 14px;
+  font-size: 16px;
 }
 
 @media(min-width: $tablet) {
   .slider-cat {
-    position: relative;
-    z-index: 0;
     height: 522px;
     margin-top: 65px;
+    max-width: unset;
   }
-
+  
+  .slider-cat__cats{
+    height: unset;
+  }
+  
   .slider-cat__first,
   .slider-cat__second {
     position: absolute;
     width: 50%;
     height: 100%;
   }
-
-  .slider-cat__overflow {
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-  }
-  
-  .slider-cat__first .slider-cat__overflow{
-    margin-left: auto;
-  }
   
   .slider-cat__first {
-    left: 0;
-
     &::before,
     &:before {
       content: "";
       background-color: #f2f2f2;
-      width: 100%;
       height: 462px;
-      position: absolute;
+      width: 100%;
       bottom: -110px;
+      position: absolute;
     }
   }
 
   .slider-cat__second {
-    right: 0;
-
     &::before,
     &:before {
       content: "";
       background-color: #e6e6e6;
-      width: 100%;
       height: 462px;
-      position: absolute;
+      width: 100%;
       bottom: -110px;
+      position: absolute;
     }
   }
 
   .slider-cat__image {
-    position: absolute;
     width: 690px;
-    z-index: 10;
   }
 
   .slider-cat__first .slider-cat__image {
@@ -124,6 +192,10 @@
       top: 12px;
       left: 12px;
     }
+  }
+  
+  .slider-cat__control{
+    display: flex;
   }
 
   .slider-cat__control--mobile {
