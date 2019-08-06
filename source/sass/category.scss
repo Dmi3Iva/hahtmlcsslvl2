@@ -171,7 +171,7 @@
   }
 }
 
-@media(max-width:$desktop){
+@media(min-width:$desktop){
   .category{
     width: 571px;
     padding-right: 50px;
