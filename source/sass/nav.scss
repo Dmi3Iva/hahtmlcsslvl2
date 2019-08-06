@@ -64,4 +64,10 @@
     font-size: 20px;
     color: #fff;
   }
+  
+  .nav__item--active{
+    &:before, &::before{
+      background-color: #fff;
+    }
+  }
 }

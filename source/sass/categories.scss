@@ -8,3 +8,14 @@
     margin-top: 59px;
   }
 }
+
+@media(min-width:$desktop){
+  .categories{
+    margin-bottom: 61px;
+  }
+  
+  .categories .wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+}

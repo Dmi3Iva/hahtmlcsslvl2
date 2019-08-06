@@ -12,3 +12,10 @@
     max-width: 768px;
   }
 }
+
+@media(min-width: $desktop){
+  .wrapper{
+    padding: 0 110px;
+    max-width: 1440px;;
+  }
+}

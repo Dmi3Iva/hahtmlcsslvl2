@@ -170,3 +170,49 @@
     }
   }
 }
+
+@media(max-width:$desktop){
+  .category{
+    width: 571px;
+    padding-right: 50px;
+  }
+  
+  .category:not(:last-child){
+    margin-bottom: 0;
+  }
+  
+  .category__icon{
+    width: 109px;
+    height: 97px;
+    top: 1px;
+    left: -4px;
+  }
+  
+  .category__icon--pro{
+    width: 133px;
+    height: 97px;
+    top: 8px;
+    left: -14px;
+  }
+  
+  .category__icon-wrap{
+    right: unset;
+    left: 50px;
+    top: 40px;
+    
+    &:before, &::before{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .category__heading{
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-left: 162px;
+  }
+  
+  .category__text{
+    margin-top: 65px;
+    margin-bottom: 4px;
+  }
+}
