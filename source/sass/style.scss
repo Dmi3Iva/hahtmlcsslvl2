@@ -45,3 +45,25 @@ body{
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
 }
+
+.br--mobile, .br--tablet, .br--desktop{
+  display: none;
+}
+
+@media (max-width: $tablet - 1px){
+  .br--mobile{
+    display: inline;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $desktop - 1px) {
+  .br--tablet{
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop){
+  .br--desktop{
+    display: inline;
+  }
+}

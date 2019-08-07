@@ -202,3 +202,28 @@
     display: none;
   }
 }
+
+@media (min-width:$desktop){
+  .slider-cat{
+    height: 388px;
+    min-width: 788px;
+  }
+  
+  .slider-cat__control {
+    padding-left: 97px;
+    padding-right: 102px;
+  }
+  
+  .slider-cat__second .slider-cat__image {
+    right: 70px;
+  }
+  
+  .slider-cat__first .slider-cat__image {
+    margin-left: 28px;
+  }
+  
+  .slider-cat__overflow{
+    height: 520px;
+    top: -156px;
+  }
+}
