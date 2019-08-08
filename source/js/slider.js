@@ -1,4 +1,4 @@
-window.onload  = function(){
+window.addEventListener("load", function(){  
   let before       = document.querySelector('.slider-cat__first');
   let after        = document.querySelector('.slider-cat__second');  
   let mobileButton = document.querySelector('.slider-cat__control--mobile .slider-cat__button');
@@ -6,7 +6,6 @@ window.onload  = function(){
   /*cat slider before after*/
   //for mobile
   document.querySelector('.slider-cat__control--mobile').addEventListener('click',function(){
-    console.log(after.style.width)
     if(after.style.width == '0%'){
       changeWidth(1);
       mobileButton.style.left = 38+'px';
@@ -40,9 +39,7 @@ window.onload  = function(){
     before.style.width = 100 - (value * 100) + '%';    
   }    
   
-  console.log(window.outerWidth);
   if(window.outerWidth < 768){
-    
     changeWidth(0);
   }
   else {
@@ -70,25 +67,21 @@ window.onload  = function(){
       }
       
       button.style.left =  pos + 'px';
-      console.log(pos);
-      console.log(button.parentElement.clientWidth);
       changeWidth(pos/ (button.parentElement.clientWidth -34));
     }
     
     function onMouseMove(event) {
       moveAt(event.pageX);
-      console.log('pagex' + event.pageX);
     }
 
     document.addEventListener("mousemove",  onMouseMove);
     
     document.onmouseup = function() {
-      console.log('stop');
       document.removeEventListener('mousemove', onMouseMove);
       document.onmouseup = null;
     };
   }
-}
+});
 
 /*functions*/
 function getPositionX(elem){

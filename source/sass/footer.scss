@@ -32,6 +32,12 @@
   line-height: (20/14);
 }
 
+.footer__map{
+  height: 362px;
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
 .footer__logo-text{
   width: 128px;
   height: 24px;
@@ -84,7 +90,7 @@
     text-align: right;
   }
   
-  .footer__map-iframe{
+  .footer__map{
     height: 400px;
   }
 
@@ -158,6 +164,7 @@
     left: 109px;
     top: 136px;
     padding:37px 73px 39px 78px;
+    z-index: 1;
   }
   
   .footer__address{
@@ -167,7 +174,7 @@
   }
   
   
-  .footer__map-iframe{
+  .footer__map{
     height: 432px;
   }
 }

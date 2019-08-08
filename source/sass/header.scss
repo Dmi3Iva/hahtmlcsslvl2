@@ -12,6 +12,7 @@
 }
 .header__nav{
   max-height: 0;
+  overflow: hidden;
   transition: max-height .3s;
 }
 .no-js .header__nav{
@@ -31,8 +32,10 @@
 }
 
 .header__text-logo{
-  width: 104px;
-  height: 19px;
+  width: 122px;
+  height: 23px;
+  padding-top: 5px;
+  padding-right: 10px;
 }
 
 .header__toggle{
