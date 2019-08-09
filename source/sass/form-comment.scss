@@ -1,0 +1,21 @@
+.form__comment .form__heading{
+  margin-bottom: 35px;
+  &::after, &:after{
+    width: 157px;
+  }
+}
+
+.form__comment-textarea{
+  border: 1px solid #e6e6e6;
+  padding: 12px 13px 30px 14px;
+  font-size: 16px;
+  font-family: $oswd-r;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: (18/16);
+  height: 150px;
+}
+
+.form__comment-textarea{
+  width: 100%;
+}

@@ -87,6 +87,7 @@
   .header__nav{
     display: flex;
     flex-direction: row;
+    overflow: visible;
   }
   .header__logo{
     width: 84px;

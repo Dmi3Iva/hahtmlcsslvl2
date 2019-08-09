@@ -1,6 +1,7 @@
 .form{
   margin-bottom: 33px;
 }
+
 .form__heading{
   font-size: 14px;
   line-height: (18/14);
@@ -23,7 +24,7 @@
 }
 
 .form__label:not(:last-child){
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .form__label:last-of-type{
@@ -34,23 +35,13 @@
   padding: 12px 35px 10px 15px;
 }
 
-.form__diet{
-  border: 1px solid #ededed;
-  display: flex;
-  flex-direction: column;
-  padding: 19px 20px 21px;
-  margin: 0;
-  border: 1px solid #ededed;
-  border-width: 1px 0;
-}
-
 .form__input-text{
   background: unset;
   flex-grow: 1;
   border: 1px solid #e6e6e6;
   margin-left: 13px;
   font-size: 18px;
-  padding: 12px 15px 10px;
+  padding: 13px 15px 10px;
   width: 100%;
 }
 
@@ -65,48 +56,6 @@
   color: rgb(68, 68, 68);
   text-transform: uppercase;
   line-height: (18/16);
-}
-
-.form__comment-textarea{
-  width: 100%;
-}
-
-.form__diet-checkbox{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid #cecece;
-}
-
-.form__diet .form__label-text{
-  margin-left: 16px;
-}
-
-.form__diet .form__label:not(:last-child){
-  margin-bottom: 0;
-}
-
-.form__diet .form__label:last-of-type{
-  margin-bottom: 0;
-}
-
-.form__cat .form__label:not(:last-child){
-  margin-bottom: 13px;
-}
-
-.form__diet-checkbox-input:checked + .form__diet-checkbox{
-  position: relative;
-  &::after, &:after{
-    position: absolute;
-    top:8px;
-    left:8px;
-    display: block;
-    content: "";
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #68b738;
-  }
 }
 
 .form__heading--second{
@@ -130,10 +79,6 @@
     }
 }
 
-.form__cat-wrapper{
-  margin-bottom: 25px;
-}
-
 .form__icon{
   position: absolute;
 }
@@ -149,33 +94,6 @@
   margin-top: -10px;
   top:50%;
   right: 13px;
-}
-
-.form__comment .form__heading{
-  margin-bottom: 35px;
-  &::after, &:after{
-    width: 157px;
-  }
-}
-
-.form__comment-textarea{
-  border: 1px solid #e6e6e6;
-  padding: 12px 13px 30px 14px;
-  font-size: 16px;
-  font-family: $oswd-r;
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: (18/16);
-  height: 150px;
-}
-
-.form__additional .form__heading{
-  margin-top: 22px;
-  margin-bottom: 35px;
-  &::after, &:after{
-    width: 136px;
-    top: 15px;
-  }
 }
 
 .form__checkbox-border{
@@ -195,10 +113,6 @@
 
 .form__checkbox-input:checked ~ .form__checkbox-tick {
   display: block;
-}
-
-.form__additional{
-  margin-bottom: 28px;
 }
 
 .form__button{
@@ -221,7 +135,3 @@
   line-height: 1.143;
   text-align: center;
 }
-
-
-
-

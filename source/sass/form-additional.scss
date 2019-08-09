@@ -1,0 +1,12 @@
+.form__additional{
+  margin-bottom: 28px;
+}
+
+.form__additional .form__heading{
+  margin-top: 22px;
+  margin-bottom: 35px;
+  &::after, &:after{
+    width: 136px;
+    top: 15px;
+  }
+}
