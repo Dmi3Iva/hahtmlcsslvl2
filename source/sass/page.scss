@@ -2,11 +2,26 @@
 
 }
 
-main .page__heading{
+.page__heading{
   font-size: 36px;
   line-height: (60/36);
   font-family: $oswd-r;
   font-weight: normal;
   margin-top: 16px;
   margin-bottom: 24px;
+}
+
+@media (min-width: $tablet){
+  .page__heading{
+    font-size: 60px;
+    margin-top: 31px;
+    margin-left: -41px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop){
+  .page__heading{
+    
+  }
 }

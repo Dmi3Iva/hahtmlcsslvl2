@@ -35,6 +35,10 @@
   padding: 12px 35px 10px 15px;
 }
 
+.form-cat__diet .form__label-text{
+  margin-left: 16px;
+}
+
 .form__input-text{
   background: unset;
   flex-grow: 1;
@@ -43,6 +47,7 @@
   font-size: 18px;
   padding: 13px 15px 10px;
   width: 100%;
+  color: #444;
 }
 
 .form__label-text {
@@ -64,8 +69,8 @@
     color: #111111;
     text-transform: none;
     line-height: 1;
-    margin-top: 30px;
-    margin-bottom: 31px;
+    margin-top: 28px;
+    margin-bottom: 34px;
     position: relative;
     &:after, &::after{
       content: "";
@@ -126,7 +131,7 @@
   text-transform: uppercase;
   line-height: 1.25;
   text-align: center;
-  margin-bottom:7px;
+  margin-bottom: 8px;
 }
 
 .form__hint{
@@ -134,4 +139,37 @@
   font-family: "Arial";
   line-height: 1.143;
   text-align: center;
+}
+
+@media (min-width: $tablet){
+  .form__heading {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 66px;
+  }
+  
+  .form__label{
+    font-size: 20px;
+  }
+  
+  .form__label:not(:last-child){
+    margin-bottom: 19px;
+  }
+  
+  .form__input-text{
+    font-size: 20px;
+    margin-left: 17px;
+    padding: 12px 15px 15px;
+  }
+  
+  .form__label-text {
+    
+  }
+
+
+  
+}
+
+@media (min-width: $desktop){
+  
 }

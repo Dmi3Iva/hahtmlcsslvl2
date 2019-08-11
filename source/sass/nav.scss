@@ -45,7 +45,7 @@
     border-bottom: none;
   }
   
-  .nav__item--active{
+  .nav__link--active {
     position: relative;
     &:before, &::before{
       content: "";
@@ -65,7 +65,7 @@
     color: #fff;
   }
   
-  .nav__item--active{
+  .nav__link--active{
     &:before, &::before{
       background-color: #fff;
     }

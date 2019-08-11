@@ -1,5 +1,5 @@
 .form__additional{
-  margin-bottom: 28px;
+  margin-bottom: 35px;
 }
 
 .form__additional .form__heading{
@@ -9,4 +9,8 @@
     width: 136px;
     top: 15px;
   }
+}
+
+.form__additional .form__label:not(:last-child){
+  margin-bottom: 12px;
 }
