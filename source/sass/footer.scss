@@ -73,12 +73,19 @@
 }
 
 @media (min-width:$tablet){
+  .form-page .footer{
+    padding-top: 46px;  
+  }
   
   .footer__top{
     padding: 46px 72px 37px 70px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+  }
+  
+  .form-page .footer__top{
+    padding-right: 72px;
   }
   
   .footer__offer {
@@ -98,6 +105,10 @@
   .footer__map{
     height: 400px;
   }
+  
+  .form-page .footer__map{
+    height: 436px;
+  }
 
   .footer__bottom{
     display: flex;
@@ -106,9 +117,17 @@
     justify-content: space-between;
   }
   
+  .form-page .footer__bottom{
+    padding-top: 6px;
+  }
+  
   .footer__logo-text{
     margin: 0;
     margin-bottom: 5px;
+  }
+  
+  .form-page .footer__logo{
+    margin-left: -39px;
   }
   
   .footer__social{
@@ -141,6 +160,10 @@
   
   .footer__copyright{
     width: 163px;
+  }
+  
+  .form-page .footer__copyright{
+    margin-right: -37px;
   }
   
   .footer__copyright-link{

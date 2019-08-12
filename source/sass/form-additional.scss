@@ -14,3 +14,22 @@
 .form__additional .form__label:not(:last-child){
   margin-bottom: 12px;
 }
+
+@media (min-width:$tablet){
+  .form__additional{
+    margin-bottom: 25px;
+  }
+  
+  .form__additional .form__heading{
+    margin-top: 51px;
+    margin-bottom: 48px;
+    &::after, &:after{
+      width: 449px;
+      top: 31px;
+    }
+  }
+  .form__additional .form__label:not(:last-child),
+  .form__additional .form__label{
+    margin-bottom: 31px;
+  }  
+}

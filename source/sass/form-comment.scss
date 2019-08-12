@@ -19,3 +19,19 @@
 .form-comment__textarea{
   width: 100%;
 }
+
+@media(min-width:$tablet){
+  .form-comment .form__heading{
+    margin-top: 57px;
+    margin-bottom: 67px;
+    &::after, &:after{
+      width: 481px;
+    }
+  }  
+  
+  .form-comment__textarea{
+    padding: 13px 13px 30px 18px;
+    font-size: 20px;
+    height: 174px;
+  }
+}

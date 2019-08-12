@@ -35,10 +35,6 @@
   padding: 12px 35px 10px 15px;
 }
 
-.form-cat__diet .form__label-text{
-  margin-left: 16px;
-}
-
 .form__input-text{
   background: unset;
   flex-grow: 1;
@@ -142,6 +138,10 @@
 }
 
 @media (min-width: $tablet){
+  .form{
+    margin-bottom: 65px;  
+  }
+  
   .form__heading {
     font-size: 20px;
     line-height: 1.5;
@@ -153,21 +153,91 @@
   }
   
   .form__label:not(:last-child){
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
   
   .form__input-text{
     font-size: 20px;
     margin-left: 17px;
-    padding: 12px 15px 15px;
+    padding: 15px 18px 12px;
+    &::placeholder{
+      font-size: 20px;
+    }
   }
   
-  .form__label-text {
+  .form__heading--second {
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 66px;
     
+    &::after, &:after{
+      top: 31px;
+      right: -70px;
+      width: 147px;
+    }
+    
+    &::before,&:before{
+      content: "";
+      background-color: #68b738;
+      height: 3px;
+      width: 30px;
+      position: absolute;
+      top: 31px;
+      left: -70px;
+      display: block;
+    }
   }
-
-
   
+  .form__icon--email{
+    right: 19px;
+  }
+  
+  .form__icon--phone{
+    margin-top: -8px;
+    right: 16px;
+  }
+  
+  .form__checkbox-border{
+    width: 40px;
+    height: 40px;
+    margin-right: 18px;
+  }
+  
+  .form__checkbox-tick{
+    margin-top: 0;
+    left: 10px;
+  }
+  
+  .form__labels{
+    flex: 1 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .form__labels .form__label{
+    width: 50%;
+  }
+  
+  .form__labels .form__label:nth-child(even){
+    padding-left: 28px;
+  }
+  
+  .form__button{
+    width: 45%;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-right: 4px;
+  }
+  
+  .form__hint{
+    font-size: 16px;
+    width: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -12px;
+    vertical-align: middle;
+  }
 }
 
 @media (min-width: $desktop){

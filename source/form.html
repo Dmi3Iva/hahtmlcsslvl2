@@ -50,7 +50,7 @@
                 <input class="form__input-text" type="text" name="name" placeholder="Барсик">
               </label>
               <label class="form__label">
-                <span class="form__label-text" >Вес (кг):*</span>
+                <span class="form__label-text" >Вес (кг):*&nbsp;</span>
                 <input class="form__input-text" type="text" name="weight" placeholder="7">
               </label>
               <label class="form__label">
@@ -58,20 +58,20 @@
                 <input class="form__input-text" type="text" name="age" placeholder="7">
               </label>
             </div>
-            <fieldset class="form-cat__diet">
+            <fieldset class="form-diet">
               <label class="form__label" >
-                <input class="visually-hidden form__diet-checkbox-input" type="radio" name="diet" alt="Выбрать похудение" checked="checked"></input>
-                <span class="form__diet-checkbox"></span>
+                <input class="visually-hidden form-diet__checkbox-input" type="radio" name="diet" alt="Выбрать похудение" checked="checked"></input>
+                <span class="form-diet__checkbox"></span>
                 <span class="form__label-text">Похудение</span>
               </label>
               <label class="form__label">
-                <input class="visually-hidden form__diet-checkbox-input" type="radio" name="diet" alt="Выбрать набор массы"></input>
-                <span class="form__diet-checkbox"></span>
+                <input class="visually-hidden form-diet__checkbox-input" type="radio" name="diet" alt="Выбрать набор массы"></input>
+                <span class="form-diet__checkbox"></span>
                 <span class="form__label-text">Набор Массы</span>
               </label>
               <label class="form__label">
-                <input class="visually-hidden form__diet-checkbox-input" type="radio" name="diet" alt="Выбрать совет"></input>
-                <span class="form__diet-checkbox"></span>
+                <input class="visually-hidden form-diet__checkbox-input" type="radio" name="diet" alt="Выбрать совет"></input>
+                <span class="form-diet__checkbox"></span>
                 <span class="form__label-text">Не знаю (нужен ваш совет)</span>
               </label>
             </fieldset>
@@ -80,14 +80,14 @@
             <section class="form__contacts form-contacts">
               <h2 class="form__heading form__heading--second">Контактные данные (владельца кота)</h2>
               <label class="form__label" >
-                <span class="form__label-text">e-mail:*</span>
+                <span class="form__label-text">e-mail:*&nbsp;&nbsp;</span>
                 <input class="form__input-text .form__label--with-icon" type="text" name="email" placeholder="kuklachev@gmail.com">
                 <svg version="1.1" width="17px" height="13px" class="form__icon form__icon--email" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
                 <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
                 </svg>
               </label>
               <label class="form__label" >
-                <span class="form__label-text">телефон:*</span>
+                <span class="form__label-text">телефон:*&nbsp;</span>
                 <input class="form__input-text .form__label--with-icon" type="text" name="tel" placeholder="8 (960) 900-60-90">
                 <svg version="1.1" class="form__icon form__icon--phone" width="20px" height="20px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
                   <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
@@ -104,42 +104,44 @@
             </section>
             <section class="form__additional">
               <h2 class="form__heading form__heading--second">Дополнительно</h2>
-              <label class="form__label form__label--checkbox">
-                <input class="visually-hidden form__checkbox-input" type="checkbox" name="ch-sugar" >
-                <span class="form__checkbox-border"></span>
-                <svg width="21px" height="16px" class="form__checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
-                <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
-                </svg>
-                <span class="form__label-text">Сахарозаменитель</span>
-              </label>
-              <label class="form__label form__label--checkbox">
-                <input class="visually-hidden form__checkbox-input" type="checkbox" name="ch-water">
-                <span class="form__checkbox-border"></span>
-                <svg width="21px" height="16px" class="form__checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
-                <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
-                </svg>
-                <span class="form__label-text">Питьевая вода</span> 
-              </label>
-              <label class="form__label form__label--checkbox">
-                <input class="visually-hidden form__checkbox-input" type="checkbox" name="ch-milk">
-                <span class="form__checkbox-border"></span>
-                <svg width="21px" height="16px" class="form__checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
-                <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
-                </svg>
-                <span class="form__label-text">Молоко</span>
-              </label>
-              <label class="form__label form__label--checkbox">
-                <input class="visually-hidden form__checkbox-input" type="checkbox" name="ch-vitamins">
-                <span class="form__checkbox-border"></span>
-                <svg width="21px" height="16px" class="form__checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
-                <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
-                </svg>
-                <span class="form__label-text">Витамины</span>
-              </label>
+              <div class="form__labels">
+                <label class="form__label form__label--checkbox">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="ch-sugar" >
+                  <span class="form__checkbox-border"></span>
+                  <svg width="21px" height="16px" class="form__checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
+                  <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
+                  </svg>
+                  <span class="form__label-text">Сахарозаменитель</span>
+                </label>
+                <label class="form__label form__label--checkbox">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="ch-water">
+                  <span class="form__checkbox-border"></span>
+                  <svg width="21px" height="16px" class="form__checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
+                  <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
+                  </svg>
+                  <span class="form__label-text">Питьевая вода</span> 
+                </label>
+                <label class="form__label form__label--checkbox">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="ch-milk">
+                  <span class="form__checkbox-border"></span>
+                  <svg width="21px" height="16px" class="form__checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
+                  <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
+                  </svg>
+                  <span class="form__label-text">Молоко</span>
+                </label>
+                <label class="form__label form__label--checkbox">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="ch-vitamins">
+                  <span class="form__checkbox-border"></span>
+                  <svg width="21px" height="16px" class="form__checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
+                  <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
+                  </svg>
+                  <span class="form__label-text">Витамины</span>
+                </label>
+              </div>
             </section>
               <button class="form__button button" type="submit" name="button">Отправить заявку</button>
               <p class="form__hint">* — Обязательные поля</p>

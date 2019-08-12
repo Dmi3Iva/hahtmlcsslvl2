@@ -1,17 +1,3 @@
-.form-cat__diet{
-  border: 1px solid #ededed;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  border: 1px solid #ededed;
-  border-width: 1px 0;
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .form-cat .form__label:nth-child(2) .form__input-text{
   margin-left: 15px;
 }
@@ -20,30 +6,9 @@
   margin-bottom: 23px;
 }
 
-/**/
-.form__diet-checkbox{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid #cecece;
-}
-
-.form__diet .form__label-text{
-  margin-left: 16px;
-}
-
-.form__diet-checkbox-input:checked + .form__diet-checkbox{
-  position: relative;
-  &::after, &:after{
-    position: absolute;
-    top:8px;
-    left:8px;
-    display: block;
-    content: "";
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #68b738;
+@media(min-width:$tablet){
+  .form-page .form-cat__profile{
+    margin-bottom: 72px;
+    padding-right: 67px;
   }
 }
-
