@@ -241,5 +241,51 @@
 }
 
 @media (min-width: $desktop){
+  .form{
+    margin-bottom: 73px;
+  }
+  .form__heading--second{
+    margin-top: 60px;
+    margin-left: -2px;
+    &::after, &:after{
+      top: 31px;
+      right: -109px;
+      width: 775px;
+    }
+    
+    &::before,&:before{
+      content: "";
+      width: 69px;
+      left: -109px;
+    }
+  }
   
+  .form__icon--phone{
+    right: 18px;
+  }
+  
+  .form__labels{
+    flex: 1 0 25%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  .form__labels .form__label{
+    width: 245px;
+  }
+  
+  .form__labels .form__label:nth-child(even){
+    padding-left: 0;
+  }
+  
+  .form__button{
+    width: 568px;
+    padding-top: 13px;
+    padding-right: 0;
+  }
+  
+  .form__hint{
+    margin-left: -139px;
+  }
 }

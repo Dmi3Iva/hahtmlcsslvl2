@@ -10,3 +10,25 @@
     padding-right: 35px;
   }
 }
+
+@media (min-width:$desktop){
+  .form-contacts__labels{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-contacts__labels .form__label:not(:last-child){
+    margin-bottom: 0;
+  }
+  
+  .form-contacts__labels .form__label{
+    width: 570px;
+    flex: 0 0 auto;
+  }
+  
+  .form-contacts .form__input-text{
+    margin-left: 11px;
+    padding-left: 19px;
+    padding-top: 16px;
+  }
+}

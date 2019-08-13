@@ -33,3 +33,17 @@
     margin-bottom: 31px;
   }  
 }
+
+@media (min-width:$desktop){
+  .form__additional .form__heading{
+    margin-top: 53px;
+    &::after, &:after{
+      width: 1077px;
+      top: 31px;
+    }
+  }
+  
+  .form__additional .form__label, .form__additional .form__label:not(:last-child){
+    margin-bottom: 36px;
+  }
+}

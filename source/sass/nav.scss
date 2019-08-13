@@ -65,9 +65,19 @@
     color: #fff;
   }
   
+  .form-page .nav__link{
+    color:#111;
+  }
+  
   .nav__link--active{
     &:before, &::before{
       background-color: #fff;
+    }
+  }
+  
+  .form-page .nav__link--active{
+    &:before, &::before{
+      background-color: #68b738;
     }
   }
 }

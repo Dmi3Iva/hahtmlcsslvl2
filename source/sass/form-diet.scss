@@ -70,5 +70,12 @@
   .form-diet .form__label:not(:last-child){
     margin-bottom: 13px;
   }
+}
 
+@media(min-width:$desktop){
+  .form-diet{
+    margin: 0 5px 0 0;
+    padding: 24px 26px;
+    width: 570px;
+  }
 }

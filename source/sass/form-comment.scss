@@ -35,3 +35,13 @@
     height: 174px;
   }
 }
+
+@media(min-width:$desktop){
+  .form-comment .form__heading{
+    margin-top: 58px;  
+    &::after, &:after{
+      width: 1110px;
+    }
+  }
+  
+}

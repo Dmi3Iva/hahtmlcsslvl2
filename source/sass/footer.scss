@@ -185,6 +185,10 @@
     padding-top: 0;
   }
   
+  .form-page .footer{
+    padding-top: 0;
+  }
+  
   .footer__top{
     position: absolute;
     width: 569px;
@@ -204,5 +208,9 @@
   
   .footer__map{
     height: 432px;
+  }
+  
+  .form-page .footer__map{
+    height: 400px;
   }
 }
