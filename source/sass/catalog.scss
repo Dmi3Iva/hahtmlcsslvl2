@@ -78,3 +78,23 @@
 .catalog__show-more{
   margin-top: 20px;
 }
+
+@media (min-width: $tablet){
+  .catalog{
+    border: none;
+  }
+  
+  .catalog__list{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex: 0 0 324px;
+      flex-basis: unset;
+  }
+  
+  .catalog__item{
+    flex-direction: column;
+    width: 324px;
+    background-color: #f2f2f2;
+  }
+}

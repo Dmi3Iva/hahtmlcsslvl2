@@ -192,11 +192,19 @@
   .footer__top{
     position: absolute;
     width: 569px;
-    height: 201px;
+    height: 160px;
     left: 109px;
     top: 136px;
     padding:37px 73px 39px 78px;
     z-index: 1;
+  }
+  
+  .form-page .footer__top{
+    padding-left: 77px;
+  }
+  
+  .form-page .footer__offer{
+    margin-top: 26px;
   }
   
   .footer__address{
@@ -205,6 +213,9 @@
     padding-left: 30px;
   }
   
+  .form-page .footer__address{
+    margin-top: 21px;
+  }
   
   .footer__map{
     height: 432px;
@@ -212,5 +223,13 @@
   
   .form-page .footer__map{
     height: 400px;
+  }
+  
+  .form-page .footer__logo{
+    margin-left: 0;  
+  }
+  
+  .form-page .footer__copyright{
+    margin-right: 0;  
   }
 }
