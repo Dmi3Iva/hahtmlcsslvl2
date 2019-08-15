@@ -96,5 +96,31 @@
     flex-direction: column;
     width: 324px;
     background-color: #f2f2f2;
+    flex: 0 0 324px;
+    margin-top: 118px;
+    position: relative;
+  }
+  
+  .catalog__item-info{
+    width: 100%;
+    margin-top: 140px;
+  }
+  
+  .catalog__img{
+    position: absolute;
+    left: 0;
+    top: -46px;
+  }
+  
+  .catalog__img--big{
+    top: -82px;
+  }
+  
+  .catalog__title{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    line-height: 1.08;
   }
 }
