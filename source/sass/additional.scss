@@ -78,6 +78,22 @@ section.additional{
 @media (min-width:$tablet){
   .additional__heading{
     font-size: 36px;
+    margin-left: 37px;
+    &:before, &::before{
+      top: 23px;
+      right: -30px;
+      width: 326px;
+    }
+    &:after, &::after{
+      content: "";
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+      position: absolute;
+      top: 23px;
+      left: -70px;
+    }
   }
 }
 
