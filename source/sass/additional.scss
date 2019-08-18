@@ -75,4 +75,10 @@ section.additional{
   padding-bottom: 7px;
 }
 
+@media (min-width:$tablet){
+  .additional__heading{
+    font-size: 36px;
+  }
+}
+
 

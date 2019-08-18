@@ -20,6 +20,10 @@
 }
 
 .show-more__btn-icon{
+  display: none;
+}
+
+.show-more__btn-icon-mobile{
   fill:#d3d3d3;
 }
 
@@ -54,4 +58,44 @@
   line-height: 1.25;
   text-align: center;
   margin-bottom: 7px;
+}
+
+@media(min-width:$tablet){
+  .show-more{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    padding-top: 53px;
+    &:before, &::before{
+      display: none;
+    }
+  }
+  
+  .show-more__btn-icon-mobile{
+    display: none;
+  }
+  
+  .show-more__btn-icon{
+    display: inline;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .show-more__title{
+    font-size: 20px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    line-height: 1;
+  }
+  
+  .show-more__text{
+    font-size: 16px;
+    font-family: Arial;
+    color: rgb(68, 68, 68);
+    line-height: 1.2;
+    margin-bottom: 85px;
+  }
+  
+  .show-more__button{
+    margin-bottom: 0;
+  }
 }
