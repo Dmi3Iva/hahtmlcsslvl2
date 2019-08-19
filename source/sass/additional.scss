@@ -1,4 +1,4 @@
-section.additional{
+.additional{
   margin-top: 28px;
   margin-bottom: 39px;
 }
@@ -76,6 +76,10 @@ section.additional{
 }
 
 @media (min-width:$tablet){
+  .additional{
+    margin-bottom: 69px;  
+  }
+  
   .additional__heading{
     font-size: 36px;
     margin-left: 37px;
@@ -94,6 +98,49 @@ section.additional{
       top: 23px;
       left: -70px;
     }
+  }
+  
+  .additional__list{
+    margin-top: 81px;
+    border:none;
+  }
+  
+  .additional__item{
+      border: 1px solid rgba(230, 230, 230, .5);
+      padding: 14px 37px 27px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &:not(:last-child){
+        border-bottom: none;
+      }      
+  }
+  
+  .additional__title{
+      font-size: 20px;
+      color: rgb(34, 34, 34);
+      line-height: 1;
+      flex: 0 0 50%;
+      margin-bottom: 25px;
+  }
+  
+  .additional__features{
+    text-align: right;
+    display: flex;
+    
+    flex: 0 0 50%;    
+    margin-top: 17px;
+  }
+  
+  .additional__features-title{
+    font-size: 16px;
+    flex: 0 0 70%;
+    text-align: right;
+  }
+  
+  .additional__features-value{
+    font-size: 16px;
   }
 }
 

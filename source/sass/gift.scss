@@ -9,6 +9,12 @@
   margin-bottom: 35px;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  .gift{
+    background-image: url('../img/gift-photo-mobile@2x.jpg');
+  }
+}
+
 .gift__icon-wrapper{
   text-align: center;
 }
@@ -37,5 +43,25 @@
     background-position: center;
     background-size: 100% auto;
     background-image: url('../img/gift-photo-tablet@1x.jpg');
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 90px 68px;
+    margin-bottom: 76px;
+  }
+  
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    .gift{
+      background-image: url('../img/gift-photo-tablet@2x.jpg');
+    }
+  }
+  
+  .gift__icon-wrapper{
+    
+  }
+  .gift__heading{
+    margin: 0;
+    margin-right: 25px;
+    margin-top: 7px;
+    text-align: left;
   }
 }
