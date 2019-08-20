@@ -144,4 +144,18 @@
   }
 }
 
-
+@media(min-width: $desktop){
+  .additional__heading{
+    margin-left: 0;
+    
+    &:before, &::before{
+      right: -110px;
+      width: 957px;
+    }
+    
+    &:after,&::after{
+      left: -110px;
+      width: 70px;
+    }
+  }
+}

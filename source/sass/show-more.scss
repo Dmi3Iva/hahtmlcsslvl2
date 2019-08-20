@@ -99,3 +99,25 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop){
+  .show-more{
+    padding: 53px 10px 39px;
+  }
+  
+  .show-more__title{
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    margin-top: 43px;
+    font-weight: 400;
+  }
+  
+  .show-more__button{
+    padding: 10px;
+    width: 169px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
