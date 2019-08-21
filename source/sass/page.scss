@@ -28,7 +28,11 @@
   .page__heading{
     font-size: 60px;
     margin-top: 50px;
-    margin-left: -1px;
+    margin-left: auto;
+  }
+  
+  .catalog-page .page__heading{
+    margin-left: auto;
   }
 
 }

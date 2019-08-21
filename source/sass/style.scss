@@ -3,7 +3,7 @@
 @import 'wrapper.scss';
 @import 'br.scss';
 
-@import 'additional.scss';
+
 @import 'advantages.scss';
 @import 'button.scss';
 @import 'catalog.scss';
@@ -25,8 +25,9 @@
 @import 'show-more.scss';
 @import 'site-list.scss';
 @import 'title.scss';
-@import 'slider-cat';
-
+@import 'slider-cat.scss';
+@import 'main-bottom-wrapper.scss';
+@import 'additional.scss';
 
 html {
   box-sizing: border-box;

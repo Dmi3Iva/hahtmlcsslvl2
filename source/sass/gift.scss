@@ -65,3 +65,33 @@
     text-align: left;
   }
 }
+
+@media (min-width:$desktop){
+  .gift{
+    margin-left: 80px;
+    margin-top: 117px;
+    margin-bottom: 18px;
+    flex-direction: column;
+    padding: 65px 28px 38px 37px;
+    width: 245px;
+    margin-right: 0;
+    background-size: 100% 100%;
+    background-image: url('../img/gift-photo-desktop@1x.jpg');
+  }
+  
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    .gift{
+      background-image: url('../img/gift-photo-desktop@2x.jpg');
+    }
+  }
+  
+  .gift__icon-wrapper{
+    padding-left: 6px;
+  }
+  
+  .gift__heading{
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+}
