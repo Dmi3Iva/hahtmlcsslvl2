@@ -6,3 +6,14 @@
   font-family: $oswd-r;
   border: none;
 }
+
+.button{
+  &:hover{
+    background-color: $greenHover;
+  }
+  
+  &:active{
+    background-color: $greenHover;
+    color: rgba(255, 255, 255, .3h);
+  }
+}

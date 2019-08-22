@@ -93,6 +93,19 @@
   }
 }
 
+.category__link:hover{
+  &:after,&::after{
+    width: 33px;
+    background-size:33px 11px;
+  }
+  &:active{
+    color: rgba(17,17,17,.3);
+    &:after,&::after{
+      opacity: .3;
+    }
+  }
+}
+
 @media (min-width: $tablet){
   
   .category{

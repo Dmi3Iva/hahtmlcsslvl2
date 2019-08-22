@@ -13,6 +13,14 @@
 .nav__item{
   border-bottom: solid 1px #e6e6e6;
   text-align: center;
+  
+  &:hover{
+    opacity: .6;
+  }
+  
+  &:active{
+    opacity: .3;
+  }
 }
 
 .nav__link {

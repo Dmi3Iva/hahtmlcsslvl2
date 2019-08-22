@@ -29,6 +29,14 @@
 .header__icon-logo{
   width: 35px;
   height: 38px;
+  
+  &:hover{
+    opacity: .8;
+  }
+  
+  &:active{
+    opacity: .6;
+  }
 }
 
 .header__text-logo{
