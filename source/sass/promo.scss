@@ -126,7 +126,9 @@
     .promo{
       &::before, &:before{
         background:url('../img/index-background-desktop@2x.jpg') no-repeat top left;
-        background-size: 100% 100%;
+        background-size: 680px 696px;
+        background-position: 40px 0;
+        background-color: #64A93C;
       }
     }
   }

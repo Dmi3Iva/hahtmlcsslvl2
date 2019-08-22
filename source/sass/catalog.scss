@@ -16,6 +16,11 @@
   flex-wrap: wrap;
 }
 
+.catalog__img{
+  width: 140px;
+  height: auto;
+}
+
 .catalog__item:not(:last-child){
   margin-bottom: 25px;
 }
@@ -73,6 +78,7 @@
   padding-top: 8px;
   padding-bottom: 8px;
   border: none;
+  margin-top: -5px;
 }
 
 .catalog__show-more{
@@ -90,6 +96,10 @@
       justify-content: space-between;
       flex-wrap: wrap;
       flex-basis: unset;
+  }
+  
+  .catalog__img{
+    width: 323px;
   }
   
   .catalog__item{
@@ -175,6 +185,10 @@
       margin-top: 143px;
     }
   }  
+  
+  .catalog__img{
+    width: 245px;
+  }
   
   .catalog__button{
     padding-left: 5px;
