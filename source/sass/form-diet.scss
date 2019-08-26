@@ -1,4 +1,4 @@
-.form-diet{
+.form-diet {
   border: 1px solid #ededed;
   display: flex;
   flex-direction: column;
@@ -12,27 +12,29 @@
   margin-right: auto;
 }
 
-.form-diet .form__label-text{
+.form-diet .form__label-text {
   margin-left: 16px;
 }
 
-.form-diet__checkbox{
+.form-diet__checkbox {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid #cecece;
 }
 
-.form-diet .form__label-text{
+.form-diet .form__label-text {
   margin-left: 16px;
 }
 
-.form-diet__checkbox-input:checked + .form-diet__checkbox{
+.form-diet__checkbox-input:checked + .form-diet__checkbox {
   position: relative;
-  &::after, &:after{
+
+  &::after,
+  &:after {
     position: absolute;
-    top:8px;
-    left:8px;
+    top: 8px;
+    left: 8px;
     display: block;
     content: "";
     width: 12px;
@@ -42,38 +44,58 @@
   }
 }
 
-@media(min-width:$tablet){
-  .form-diet{
+.form-diet .form__label {
+  &:hover .form-diet__checkbox {
+    border: 1px solid rgb(186, 186, 186);
+  }
+
+  &:active {
+    .form-diet__checkbox {
+      border: 1px solid rgba(186, 186, 186, .3);
+    }
+
+    .form__label-text {
+      opacity: 0.3;
+    }
+
+    .form-diet__checkbox::after,
+    .form-diet__checkbox:after {
+      background-color: rgba(104,183,56,.3);
+    }
+  }
+}
+@media(min-width:$tablet) {
+  .form-diet {
     max-width: 630px;
     padding: 24px 29px;
     border-width: 1px;
-  }  
-  
-  .form-diet__checkbox{
+  }
+
+  .form-diet__checkbox {
     width: 40px;
     height: 40px;
-  }  
-  
-  .form-diet__checkbox-input:checked + .form-diet__checkbox{
-    &::after, &:after{
-      top:10px;
-      left:10px;  
+  }
+
+  .form-diet__checkbox-input:checked + .form-diet__checkbox {
+    &::after,
+    &:after {
+      top: 10px;
+      left: 10px;
       width: 18px;
       height: 18px;
     }
   }
-  
-  .form-diet .form__label-text{
+
+  .form-diet .form__label-text {
     margin-left: 19px;
   }
-  
-  .form-diet .form__label:not(:last-child){
+
+  .form-diet .form__label:not(:last-child) {
     margin-bottom: 13px;
   }
 }
-
-@media(min-width:$desktop){
-  .form-diet{
+@media(min-width:$desktop) {
+  .form-diet {
     margin-right: -6px;
     padding: 24px 26px;
     width: 570px;

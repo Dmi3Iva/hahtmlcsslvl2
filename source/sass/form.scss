@@ -44,6 +44,27 @@
   padding: 13px 15px 10px;
   width: 100%;
   color: #444;
+  outline:none;
+  
+  &:hover{
+    border-color: #cdcdcd;
+  }
+  
+  &:active{
+    border-color: #444444;
+    
+    & + svg{
+      fill:#68b738;
+    }
+  }
+  
+  &:invalid{
+    border-color: #ff8282;
+    
+    & + svg{
+      fill:#ff8282;
+    }
+  }
 }
 
 .form__label-text {

@@ -1,4 +1,4 @@
-.slider-cat{
+.slider-cat {
   font-family: $oswd-r;
   text-transform: uppercase;
   position: relative;
@@ -16,15 +16,17 @@
 }
 
 .slider-cat__cats {
-    height: 240px;
-    margin-top: 35px;
+  height: 240px;
+  margin-top: 35px;
 }
 
-.slider-cat__first .slider-cat__overflow{
+.slider-cat__first .slider-cat__overflow {
   margin-left: auto;
 }
-.slider-cat__first, .slider-cat__second{
-  height: 100%; 
+
+.slider-cat__first,
+.slider-cat__second {
+  height: 100%;
   position: absolute;
 }
 
@@ -52,7 +54,7 @@
   margin-right: auto;
 }
 
-.slider-cat__line{
+.slider-cat__line {
   border-radius: 5px;
   border: 1px solid #cdcdcd;
   background-color: #fff;
@@ -62,7 +64,7 @@
   position: relative;
 }
 
-.slider-cat__button{
+.slider-cat__button {
   background-color: rgb(104, 183, 56);
   position: absolute;
   width: 35px;
@@ -72,36 +74,34 @@
   border-radius: 3px;
 }
 
-
-.slider-cat__control{
+.slider-cat__control {
   display: none;
 }
 
-.slider-cat__control--mobile{
+.slider-cat__control--mobile {
   display: flex;
   padding: 0 59px 0 63px;
   margin-top: 14px;
   font-size: 16px;
 }
-
 @media(min-width: $tablet) {
   .slider-cat {
     height: 522px;
     margin-top: 65px;
     max-width: unset;
   }
-  
-  .slider-cat__cats{
+
+  .slider-cat__cats {
     height: unset;
   }
-  
+
   .slider-cat__first,
   .slider-cat__second {
     position: absolute;
     width: 50%;
     height: 100%;
   }
-  
+
   .slider-cat__first {
     &::before,
     &:before {
@@ -137,7 +137,7 @@
   .slider-cat__second .slider-cat__image {
     right: calc(32px + (100vw - 768px) / 2);
   }
-  
+
   .slider-cat__control {
     z-index: 20;
     display: flex;
@@ -152,13 +152,14 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .slider-cat__before,.slider-cat__after{
+
+  .slider-cat__after,
+  .slider-cat__before {
     border-bottom: 1px dotted #000;
     padding-bottom: 1px;
   }
-  
-  .slider-cat__line{
+
+  .slider-cat__line {
     border-radius: 2px;
     background-color: #dcdcdc;
     width: 428px;
@@ -166,22 +167,23 @@
     margin-bottom: 33px;
     position: relative;
   }
-  
-  .slider-cat__button{
+
+  .slider-cat__button {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(205, 205, 205);
     border-radius: 50%;
     background-color: #fff;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);  
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     width: 34px;
     height: 34px;
     position: relative;
     z-index: 5;
     top: -13px;
     left: 200px;
-    
-    &:after, &::after{
+
+    &::after,
+    &:after {
       position: absolute;
       width: 8px;
       height: 8px;
@@ -193,36 +195,75 @@
       left: 12px;
     }
   }
-  
-  .slider-cat__control{
+
+  .slider-cat__control {
     display: flex;
   }
 
   .slider-cat__control--mobile {
     display: none;
   }
-}
+  
+  
+  .slider-cat__control:hover .slider-cat__before {
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0,.4);
+  }
+  
+  .slider-cat__control:active .slider-cat__before {
+    border-bottom-style: none;
+  }
+  
+  .slider-cat__control:hover .slider-cat__after {
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0,.4);
+  }
+  
+  .slider-cat__control:active .slider-cat__after {
+    border-bottom-style: none;
+  }
+  
+  .slider-cat__control:hover .slider-cat__button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(205, 205, 205);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .slider-cat__control:active .slider-cat__button {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(104, 183, 56);
+    border-radius: 50%;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    
+    &:after, &::after{
+      top: 11px;
+      left: 11px;
+    }
+  }
 
-@media (min-width:$desktop){
-  .slider-cat{
+}
+@media (min-width:$desktop) {
+  .slider-cat {
     height: 388px;
     min-width: 788px;
   }
-  
+
   .slider-cat__control {
     padding-left: 97px;
     padding-right: 102px;
   }
-  
+
   .slider-cat__second .slider-cat__image {
     right: 70px;
   }
-  
+
   .slider-cat__first .slider-cat__image {
     margin-left: 28px;
   }
-  
-  .slider-cat__overflow{
+
+  .slider-cat__overflow {
     height: 520px;
     top: -156px;
   }
