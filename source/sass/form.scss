@@ -118,6 +118,25 @@
   right: 13px;
 }
 
+.form__label--checkbox{
+  &:hover{
+    .form__checkbox-border{
+      border-color: #bababa;
+    }
+  }
+  
+  &:active{
+    .form__checkbox-border{
+      border-color: rgba(234, 234, 234, .3);
+    }
+    
+    
+    .form__checkbox-border +svg{
+      opacity: .3;
+    }
+  }
+}
+
 .form__checkbox-border{
   width: 30px;
   height: 30px;
